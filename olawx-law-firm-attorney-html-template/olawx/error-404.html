@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zxx">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Link of CSS files -->
+        <link id="bootstrapStylesheet" rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/scrollcue.min.css">
+        <link rel="stylesheet" href="assets/css/remixicon.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <title>Olawx - Law Firm & Attorney HTML Template</title>
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    </head>
+    <body class="bg-linen">
+
+        <!--  Preloader Start -->
+        <div class="preloader-area" id="preloader">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--  Preloader End -->
+
+        <!-- Theme Switcher Start -->
+        <div class="theme-switcher">
+            <button class="toggle-switch-btn border-0"><i class="ri-settings-2-line rotate"></i></button>
+            <div class="switch-theme-mode mb-20">
+                <label id="switch" class="switch d-flex align-items-center">
+                    <small class="left text-title">Light</small>
+                    <input type="checkbox" onchange="toggleTheme()" id="slider">
+                    <span class="slider round"></span>
+                    <small class="right text-title">Dark</small>
+                </label>
+            </div>
+            <!-- RTL Switcher -->
+            <div class="rtl-switch">
+                <label class=" d-flex flex-wrap align-items-center">
+                    <small class="ltr text-title">LTR</small>
+                    <input type="checkbox" id="directionToggle">
+                    <span class="slider round"></span>
+                    <small class="rtl text-title">RTL</small>
+                </label>
+            </div>
+        </div>
+
+        <!-- Custom Cursor -->
+        <div class="cursor">
+            <span class="cursor-text d-flex flex-column align-items-center justify-content-center rounded-circle bg-white text-title fs-14 fw-semibold"></span>
+        </div>
+        <div class="cursor-inner"></div>
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                
+                <!-- Navbar Area Start -->
+                <div class="navbar-area style-one position-relative z-2" id="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-wrapper d-flex align-items-xl-end align-items-center">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="assets/img/logo-white.png" alt="Logo">
+                            </a>
+                            <div class="menu-wrapper d-flex align-items-center ms-auto">
+                                <div class="menu-area">
+                                    <div class="overlay"></div>
+                                    <nav class="menu">
+                                        <div class="menu-mobile-header">
+                                            <button type="button" class="menu-mobile-arrow bg-transparent border-0"><i class="ri-arrow-left-s-line"></i></button>
+                                            <div class="menu-mobile-title"></div>
+                                            <button type="button" class="menu-mobile-close bg-transparent border-0"><i class="ri-close-line"></i></button>
+                                        </div>
+                                        <ul class="menu-section p-0 mb-0 lh-1">
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Home<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li class="list-item">
+                                                        <a href="index.html">Home - Law Firm</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="index-2.html">Home - Empowering justice</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="index-3.html">Home - Law Firm Agency</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)" class="active">Pages<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li><a href="about-us.html">About Us</a></li>
+                                                    <li class="menu-item-has-children">
+                                                        <a href="javascript:void(0)">Attorneys<i class="ri-arrow-right-s-line"></i></a>
+                                                        <ul class="menu-subs menu-column-1">
+                                                            <li><a href="attorneys.html">Attorneys</a></li>
+                                                            <li><a href="attorney-details.html">Attorneys Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="our-clients.html">Our Clients</a></li>
+                                                    <li><a href="appointment.html">Appointment</a></li>
+                                                    <li><a href="pricing-plan.html">Pricing Plan</a></li>
+                                                    <li><a href="faq.html">FAQ</a></li>
+                                                    <li><a href="testimonials.html" class="active">Testimonials</a></li>
+                                                    <li><a href="career.html">Career</a></li>
+                                                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                                    <li><a href="error-404.html">Error 404</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Practice Areas<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li><a href="practice-areas.html">Practice Areas</a></li>
+                                                    <li><a href="practice-area-details.html">Practice Area Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Case Studies<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li><a href="case-studies.html">Case Studies</a></li>
+                                                    <li><a href="case-study-details.html">Case Study Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Blog<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li class="menu-item-has-children"><a href="javascript:void(0)">Blog
+                                                            Layout<i class="ri-arrow-right-s-line"></i></a>
+                                                        <ul class="menu-subs menu-column-1">
+                                                            <li><a href="blog.html">Blog</a></li>
+                                                            <li><a href="blog-standard.html">Standard</a></li>
+                                                            <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item-has-children"><a href="javascript:void(0)"> Blog
+                                                            Details<i class="ri-arrow-right-s-line"></i></a>
+                                                        <ul class="menu-subs menu-column-1">
+                                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                                            <li><a href="blog-details-left-sidebar.html">With Left Sidebar</a>
+                                                            </li>
+                                                            <li><a href="blog-details-right-sidebar.html">With Right Sidebar</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item-has-children"><a href="javascript:void(0)">Others<i class="ri-arrow-right-s-line"></i></a>
+                                                        <ul class="menu-subs menu-column-1">
+                                                            <li><a href="author.html">Author</a></li>
+                                                            <li><a href="category.html">Category</a></li>
+                                                            <li><a href="tag.html">Tag</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Shop<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li><a href="shop.html">Shop</a></li>
+                                                    <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
+                                                    <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                                    <li><a href="cart.html">Cart</a></li>
+                                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="login.html">Login</a></li>
+                                                    <li><a href="register.html">Register</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+                                    <div class="option-item position-relative">
+                                        <button class="search-btn border-0 d-flex flex-column align-items-center justify-content-center dropdown-toggle text-white rounded-circle transition" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                            <i class="ri-search-line"></i>
+                                            <i class="ri-close-line"></i>
+                                        </button>
+                                        <div class="search-dropdown dropdown-menu dropdown-menu-right top-1 border-0" data-bs-popper="static">
+                                            <form class="search-popup position-relative" action="#">
+                                                <input type="search" class="form-control text-para" placeholder="Search Here">
+                                                <button type="submit" class="position-absolute top-0 end-0 h-100 border-0 bg-transparent d-flex flex-column align-items-center justify-content-center"><i class="ri-search-2-line"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="option-item">
+                                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar-area" aria-controls="sidebar-area" class="sidebar-btn p-0 d-flex flex-column align-items-center justify-content-center rounded-circle text-white transition border-0">
+                                            <i class="ri-menu-3-fill"></i>
+                                        </button>
+                                    </div>
+                                    <div class="option-item d-lg-none">
+                                        <button type="button" class="menu-mobile-trigger">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navbar Area End -->
+
+                <!-- Sidebar Start-->
+                <div class="sidebar-wrap offcanvas bg-ash offcanvas-end border-0" tabindex="-1" id="sidebar-area">
+                    <div class="offcanvas-header d-flex flex-wrap align-items-center justify-content-between">
+                        <a href="index.html" class="logo d-block">
+                            <img src="assets/img/logo-white.png" alt="Logo">
+                        </a>
+                        <button type="button" class="close-btn bg_white border-0 text-title d-flex flex-column align-items-center justify-content-center rounded-circle p-0 transition" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="ri-close-line"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body position-relative z-1">
+                        <p class="text-white mb-25">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat illo tenetur sapiente laborum quibusdam est veniam dignissimos doloremque esse aliquam!</p>
+                        <ul class="contact-info list-unstyled mb-30">
+                            <li class="position-relative">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <h6 class="text-white fw-bold mb-1">Location</h6>
+                                <p class="text-white mb-0">15 Washington Square, New York, USA</p>
+                            </li>
+                            <li class="position-relative">
+                                <i class="ri-mail-fill"></i>
+                                <h6 class="text-white fw-bold mb-1">Email</h6>
+                                <a href="mailto:hello@olawx.com" class="text-white link-hover-secondary transition">hello@olawx.com</a>
+                            </li>
+                            <li class="position-relative">
+                                <i class="ri-phone-fill"></i>
+                                <h6 class="text-white fw-bold mb-1">Phone</h6>
+                                <a href="tel:30098765432150" class="text-white link-hover-secondary transition">(+30) 098765432150</a>
+                            </li>
+                        </ul>
+                        <div class="comp-map round-20">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8385385572983!2d144.95358331584498!3d-37.81725074201705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4dd5a05d97%3A0x3e64f855a564844d!2s121%20King%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sbd!4v1612419490850!5m2!1sen!2sbd">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar End-->
+
+                <!-- Breadcrumb Section Start -->
+                <div class="breadcrumb-area bg-f position-relative z-1" style="background-image: url(assets/img/br-bg.jpg);">
+                    <div class="container-fluid style-two">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h2 class="section-title style-two fw-semibold ls-n2 text-white mb-20">Testimonials</h2>
+                                <ul class="d-inline-flex flex-wrap align-items-center list-unstyled mb-0">
+                                    <li class="position-relative"><a href="index.html">Home</a></li>
+                                    <li class="position-relative">Testimonials</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <div class="circle-text-wrap position-relative d-flex flex-column align-items-center justify-content-center rounded-circle ms-md-auto me-md-0 ms-auto me-auto mt-4 mt-md-0">
+                                    <img src="assets/img/circle-text-breadcrumb.svg" alt="Image text" class="rotate">
+                                    <img src="assets/img/icons/fav-icon.svg" alt="Icon" class="fav-icon position-absolute top-50 start-50">
+                                    <a href="contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Breadcrumb Section End -->
+
+                <!-- Testimonial Section Start -->
+                <div class="container-fluid style-two mb-5 mb-lg-0">
+                    <div class="row">
+                        <div class="col-xxl-5 col-lg-6 pt-115 mb-lg-0 mb-4">
+                            <h6 class="fs-16 fw-normal text-para mb-12">Feedback From Clients</h6>
+                            <h2 class="section-title style-one fw-semibold ls-n2 mb-35">What our clients say about their experience with Olawx law firm</h2>
+                            <div class="testimonial-slider style-one swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card style-one d-flex flex-wrap">
+                                            <span class="quote-icon text_secondary"><i class="ri-double-quotes-r"></i></span>
+                                            <div class="client-quote">
+                                                <div class="rating d-flex align-items-center text-title fs-24 mb-8">
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                </div>
+                                                <p>As a startup, we needed legal guidance that was both comprehensive and affordable. Olawx provided exactly that - their flexible approach to billing and deep expertise was invaluable to our growth.</p>
+                                                <div class="client-info-wrap d-flex flex-wrap align-items-center">
+                                                    <div class="client-img rounded-circle"><img src="assets/img/clients/client-5.jpg" alt="Image" class="rounded-circle"></div>
+                                                    <div class="client-info">
+                                                        <h6 class="fs-20 fw-semibold mb-1">Michael Williams</h6>
+                                                        <span>Founder, Klenex Innovations</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card style-one d-flex flex-wrap">
+                                            <span class="quote-icon text_secondary"><i class="ri-double-quotes-r"></i></span>
+                                            <div class="client-quote">
+                                                <div class="rating d-flex align-items-center text-title fs-24 mb-8">
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                </div>
+                                                <p>Olawx provided exactly that - their flexible approach to billing and deep expertise was invaluable to our growth. As a startup, we needed legal guidance that was both comprehensive and affordable. </p>
+                                                <div class="client-info-wrap d-flex flex-wrap align-items-center">
+                                                    <div class="client-img rounded-circle"><img src="assets/img/clients/client-1.jpg" alt="Image" class="rounded-circle"></div>
+                                                    <div class="client-info">
+                                                        <h6 class="fs-20 fw-semibold mb-1">Tim Wilson</h6>
+                                                        <span>Enterprenuer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card style-one d-flex flex-wrap">
+                                            <span class="quote-icon text_secondary"><i class="ri-double-quotes-r"></i></span>
+                                            <div class="client-quote">
+                                                <div class="rating d-flex align-items-center text-title fs-24 mb-8">
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                </div>
+                                                <p>We needed legal guidance that was both comprehensive and affordable as a startup,. Olawx provided exactly that - their flexible approach to billing and deep expertise was invaluable to our growth.</p>
+                                                <div class="client-info-wrap d-flex flex-wrap align-items-center">
+                                                    <div class="client-img rounded-circle"><img src="assets/img/clients/client-2.jpg" alt="Image" class="rounded-circle"></div>
+                                                    <div class="client-info">
+                                                        <h6 class="fs-20 fw-semibold mb-1">Harry Gotham</h6>
+                                                        <span>Businessman</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-pagination z-1"></div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 offset-xxl-1 col-lg-6 pe-lg-0">
+                            <div class="testimonial-bg-one bg-f w-100" style="background-image: url(assets/img/clients/client-large-1.jpg);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 offset-xl-4 col-lg-9 offset-lg-3 ps-xxl-1">
+                            <div class="cta-box position-relative bg-optional round-20 text-center">
+                                <h2 class="section-title style-one fw-semibold text-white ls-n2 mb-30 px-xxl-5">Have you worked with Olawx? 
+                                    We'd love to hear about your experience</h2>
+                                 <a href="login.html" class="btn style-one d-inline-flex flex-wrap align-items-center transition">
+                                    <span class="btn-text d-flex flex-column align-items-center justify-content-center transition">Submit Your Feedback</span>
+                                    <span class="btn-icon d-flex flex-column align-items-center justify-content-center transition"><img src="assets/img/icons/right-arrow.svg" alt="Icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container ptb-115">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-6 pe-lg-2">
+                            <div class="testimonial-img position-relative overflow-hidden round-20 h-lg-100 mb-lg-0 mb-4">
+                                <div class="img-container position-absolute top-0 start-0 w-100 h-100 round-20">
+                                    <img src="assets/img/clients/client-large-3.jpg" alt="Image" class="w-100 h-100 object-fit-cover round-20">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 offset-xl-1 col-lg-6 ps-xxl-3 pe-xxl-1">
+                            <h6 class="fs-16 fw-normal text-para mb-12">Client Testimonials</h6>
+                            <h2 class="section-title style-one fw-semibold ls-n2 mb-35">Hear what our clients have to say about their experience with Olawx Law Firm</h2>
+                            <div class="testimonial-slider style-three swiper position-relative">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card style-three d-flex flex-wrap">
+                                            <i class="ri-double-quotes-r"></i>
+                                            <div class="rating d-block w-100 text_secondary mb-8">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </div>
+                                            <p class="text-title">“Olawx handled my corporate litigation with exceptional skill and dedication. Their strategic approach saved our company millions and protected our reputation. I was particularly impressed with their attention to detail and commitment to understanding our business.”</p>
+                                            <div class="client-info-wrap d-flex flex-wrap align-items-center">
+                                                <div class="client-info">
+                                                    <h6 class="fs-20 fw-semibold mb-1">Michael Williams</h6>
+                                                    <span>Founder, Klenex Innovations</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card style-three d-flex flex-wrap">
+                                            <i class="ri-double-quotes-r"></i>
+                                            <div class="rating d-block w-100 text_secondary mb-8">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </div>
+                                            <p class="text-title">“Their strategic approach saved our company millions and protected our reputation. They handled my corporate litigation with exceptional skill and dedication. I was particularly impressed with their attention to detail and commitment to understanding our business.”</p>
+                                            <div class="client-info-wrap d-flex flex-wrap align-items-center">
+                                                <div class="client-info">
+                                                    <h6 class="fs-20 fw-semibold mb-1">Nicolas Cage</h6>
+                                                    <span>Enterprenuer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card style-three d-flex flex-wrap">
+                                            <i class="ri-double-quotes-r"></i>
+                                            <div class="rating d-block w-100 text_secondary mb-8">
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                                <i class="ri-star-fill"></i>
+                                            </div>
+                                            <p class="text-title">“I was particularly impressed with their attention to detail and commitment to understanding our business. They handled my corporate litigation with exceptional skill and dedication. Their strategic approach saved our company millions and protected our reputation.”</p>
+                                            <div class="client-info-wrap d-flex flex-wrap align-items-center">
+                                                <div class="client-info">
+                                                    <h6 class="fs-20 fw-semibold mb-1">Jim Kollins</h6>
+                                                    <span>Director, IUBAC Inc</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-pagination z-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial Section End -->
+
+                <!-- Footer Section Start -->
+                <footer class="footer-area style-three bg-title pt-115">
+                    <div class="container">
+                        <div class="row pb-85">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <a href="index.html" class="logo d-block mb-22">
+                                        <img src="assets/img/logo-white.png" alt="Logo">
+                                    </a>
+                                    <h3 class="fs-20 fw-semibold text_secondary">Newsletter</h3>
+                                    <p class="mb-18">Subscribe to our newsletter for the latest legal updates news</p>
+                                    <form action="#" class="newsletter-form style-two position-relative">
+                                        <input type="email" class="w-100 bg-transparent text-white outline-0" placeholder="Email address">
+                                        <button class="bg-transparent border-0 position-absolute text_secondary end-0"><i class="ri-send-plane-2-line"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 offset-xl-1 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <ul class="contact-info list-unstyled mb-0">
+                                        <li>
+                                            <span class="d-block mb-1 text-white">Call Us</span>
+                                            <a href="tel:15555078494" class="text_secondary fw-bold hover-text-primary transition">+1 (555) 507-8494</a>
+                                        </li>
+                                        <li>
+                                            <span class="d-block mb-1 text-white">Email Us</span>
+                                            <a href="mailto:info@olawx.com" class="text_secondary fw-semibold hover-text-primary transition">info@olawx.com</a>
+                                        </li>
+                                        <li>
+                                            <span class="d-block mb-1 text-white">Address</span>
+                                            <p class="mb-0 pe-xxl-5">753 Legal Avenue, Suite 159, NY 10101, New York, USA</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <h3 class="footer-widget-title fs-20 fw-semibold text_secondary mb-30">Practice
+                                        Areas</h3>
+                                    <ul class="footer-menu style-two list-unstyled mb-0">
+                                        <li><a href="practice-areas.html">Commercial Litigation</a>
+                                        <li><a href="practice-areas.html">Corporate Law</a>
+                                        <li><a href="practice-areas.html">Intellectual Property</a>
+                                        <li><a href="practice-areas.html">Family Law</a>
+                                        <li><a href="practice-areas.html">Real Estate Law</a>
+                                        <li><a href="practice-areas.html">Employment Law</a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <h3 class="footer-widget-title fs-20 fw-semibold text_secondary mb-30">Quick Links
+                                    </h3>
+                                    <ul class="footer-menu style-two list-unstyled mb-0">
+                                        <li><a href="index.html">Home</a>
+                                        <li><a href="about-us.html">About Us</a>
+                                        <li><a href="practice-areas.html">Case Studies</a>
+                                        <li><a href="privacy-policy.html">Privacy Policy</a>
+                                        <li><a href="terms-conditions.html">Terms & Conditions</a>
+                                        <li><a href="contact.html">Contact Us</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="row align-items-center">
+                                <div class="col-md-7 pe-md-0 mb-sm-10">
+                                    <p class="copyright-text text-offwhite text-md-start text-center mb-0"><i class="ri-copyright-line"></i><span class="text-white fw-semibold ms-1 me-1">Olawx</span> Is Proudly Owned By <a href="https://envytheme.com/" target="_blank" class="text_secondary fw-semibold link-hover-secondary transition">EnvyTheme</a>
+                                    </p>
+                                </div>
+                                <div class="col-md-5 text-md-end text-center">
+                                    <ul class="social-profile style-two list-unstyled mb-0">
+                                        <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-facebook-fill"></i></a></li>
+                                        <li><a href="https://x.com/?lang=en" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-twitter-x-line"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-linkedin-fill"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-instagram-line"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+
+            </div>
+        </div>
+            <!-- Back to Top -->
+            <div id="progress-wrap" class="progress-wrap style-one">
+                <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                    <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+                </svg>
+            </div>
+            <!-- Link of JS files -->
+            <script src="assets/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/js/megamenu.js"></script>
+            <script src="assets/js/swiper-bundle.min.js"></script>
+            <script src="assets/js/fslightbox.js"></script>
+            <script src="assets/js/gsap.min.js"></script>
+            <script src="assets/js/scrollTrigger.min.js"></script>
+            <script src="assets/js/lenis.min.js"></script>
+            <script src="assets/js/scrollToPlugin.js"></script>
+            <script src="assets/js/SplitText.min.js"></script>
+            <script src="assets/js/customEase.js"></script>
+            <script src="assets/js/scrollcue.min.js"></script>
+            <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zxx">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Link of CSS files -->
+        <link id="bootstrapStylesheet" rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/scrollcue.min.css">
+        <link rel="stylesheet" href="assets/css/remixicon.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <title>Olawx - Law Firm & Attorney HTML Template</title>
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    </head>
+    <body class="bg-linen">
+
+        <!--  Preloader Start -->
+        <div class="preloader-area" id="preloader">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--  Preloader End -->
+
+        <!-- Theme Switcher Start -->
+        <div class="theme-switcher">
+            <button class="toggle-switch-btn border-0"><i class="ri-settings-2-line rotate"></i></button>
+            <div class="switch-theme-mode mb-20">
+                <label id="switch" class="switch d-flex align-items-center">
+                    <small class="left text-title">Light</small>
+                    <input type="checkbox" onchange="toggleTheme()" id="slider">
+                    <span class="slider round"></span>
+                    <small class="right text-title">Dark</small>
+                </label>
+            </div>
+            <!-- RTL Switcher -->
+            <div class="rtl-switch">
+                <label class=" d-flex flex-wrap align-items-center">
+                    <small class="ltr text-title">LTR</small>
+                    <input type="checkbox" id="directionToggle">
+                    <span class="slider round"></span>
+                    <small class="rtl text-title">RTL</small>
+                </label>
+            </div>
+        </div>
+
+        <!-- Custom Cursor -->
+        <div class="cursor">
+            <span class="cursor-text d-flex flex-column align-items-center justify-content-center rounded-circle bg-white text-title fs-14 fw-semibold"></span>
+        </div>
+        <div class="cursor-inner"></div>
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                
+                <!-- Navbar Area Start -->
+                <div class="navbar-area style-one position-relative z-2" id="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-wrapper d-flex align-items-xl-end align-items-center">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="assets/img/logo-white.png" alt="Logo">
+                            </a>
+                            <div class="menu-wrapper d-flex align-items-center ms-auto">
+                                <div class="menu-area">
+                                    <div class="overlay"></div>
+                                    <nav class="menu">
+                                        <div class="menu-mobile-header">
+                                            <button type="button" class="menu-mobile-arrow bg-transparent border-0"><i class="ri-arrow-left-s-line"></i></button>
+                                            <div class="menu-mobile-title"></div>
+                                            <button type="button" class="menu-mobile-close bg-transparent border-0"><i class="ri-close-line"></i></button>
+                                        </div>
+                                        <ul class="menu-section p-0 mb-0 lh-1">
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Home<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li class="list-item">
+                                                        <a href="index.html">Home - Law Firm</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="index-2.html">Home - Empowering justice</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="index-3.html">Home - Law Firm Agency</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Pages<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li><a href="about-us.html">About Us</a></li>
+                                                    <li class="menu-item-has-children">
+                                                        <a href="javascript:void(0)">Attorneys<i class="ri-arrow-right-s-line"></i></a>
+                                                        <ul class="menu-subs menu-column-1">
+                                                            <li><a href="attorneys.html">Attorneys</a></li>
+                                                            <li><a href="attorney-details.html">Attorneys Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="our-clients.html">Our Clients</a></li>
+                                                    <li><a href="appointment.html">Appointment</a></li>
+                                                    <li><a href="pricing-plan.html">Pricing Plan</a></li>
+                                                    <li><a href="faq.html">FAQ</a></li>
+                                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                                    <li><a href="career.html">Career</a></li>
+                                                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                                    <li><a href="error-404.html">Error 404</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)" class="active">Practice Areas<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li><a href="practice-areas.html" class="active">Practice Areas</a></li>
+                                                    <li><a href="practice-area-details.html">Practice Area Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Case Studies<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li><a href="case-studies.html">Case Studies</a></li>
+                                                    <li><a href="case-study-details.html">Case Study Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Blog<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li class="menu-item-has-children"><a href="javascript:void(0)">Blog
+                                                            Layout<i class="ri-arrow-right-s-line"></i></a>
+                                                        <ul class="menu-subs menu-column-1">
+                                                            <li><a href="blog.html">Blog</a></li>
+                                                            <li><a href="blog-standard.html">Standard</a></li>
+                                                            <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item-has-children"><a href="javascript:void(0)"> Blog
+                                                            Details<i class="ri-arrow-right-s-line"></i></a>
+                                                        <ul class="menu-subs menu-column-1">
+                                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                                            <li><a href="blog-details-left-sidebar.html">With Left Sidebar</a>
+                                                            </li>
+                                                            <li><a href="blog-details-right-sidebar.html">With Right Sidebar</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item-has-children"><a href="javascript:void(0)">Others<i class="ri-arrow-right-s-line"></i></a>
+                                                        <ul class="menu-subs menu-column-1">
+                                                            <li><a href="author.html">Author</a></li>
+                                                            <li><a href="category.html">Category</a></li>
+                                                            <li><a href="tag.html">Tag</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Shop<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li><a href="shop.html">Shop</a></li>
+                                                    <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
+                                                    <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                                    <li><a href="cart.html">Cart</a></li>
+                                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="login.html">Login</a></li>
+                                                    <li><a href="register.html">Register</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+                                    <div class="option-item position-relative">
+                                        <button class="search-btn border-0 d-flex flex-column align-items-center justify-content-center dropdown-toggle text-white rounded-circle transition" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                            <i class="ri-search-line"></i>
+                                            <i class="ri-close-line"></i>
+                                        </button>
+                                        <div class="search-dropdown dropdown-menu dropdown-menu-right top-1 border-0" data-bs-popper="static">
+                                            <form class="search-popup position-relative" action="#">
+                                                <input type="search" class="form-control text-para" placeholder="Search Here">
+                                                <button type="submit" class="position-absolute top-0 end-0 h-100 border-0 bg-transparent d-flex flex-column align-items-center justify-content-center"><i class="ri-search-2-line"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="option-item">
+                                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar-area" aria-controls="sidebar-area" class="sidebar-btn p-0 d-flex flex-column align-items-center justify-content-center rounded-circle text-white transition border-0">
+                                            <i class="ri-menu-3-fill"></i>
+                                        </button>
+                                    </div>
+                                    <div class="option-item d-lg-none">
+                                        <button type="button" class="menu-mobile-trigger">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navbar Area End -->
+
+                <!-- Sidebar Start-->
+                <div class="sidebar-wrap offcanvas bg-ash offcanvas-end border-0" tabindex="-1" id="sidebar-area">
+                    <div class="offcanvas-header d-flex flex-wrap align-items-center justify-content-between">
+                        <a href="index.html" class="logo d-block">
+                            <img src="assets/img/logo-white.png" alt="Logo">
+                        </a>
+                        <button type="button" class="close-btn bg_white border-0 text-title d-flex flex-column align-items-center justify-content-center rounded-circle p-0 transition" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="ri-close-line"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body position-relative z-1">
+                        <p class="text-white mb-25">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat illo tenetur sapiente laborum quibusdam est veniam dignissimos doloremque esse aliquam!</p>
+                        <ul class="contact-info list-unstyled mb-30">
+                            <li class="position-relative">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <h6 class="text-white fw-bold mb-1">Location</h6>
+                                <p class="text-white mb-0">15 Washington Square, New York, USA</p>
+                            </li>
+                            <li class="position-relative">
+                                <i class="ri-mail-fill"></i>
+                                <h6 class="text-white fw-bold mb-1">Email</h6>
+                                <a href="mailto:hello@olawx.com" class="text-white link-hover-secondary transition">hello@olawx.com</a>
+                            </li>
+                            <li class="position-relative">
+                                <i class="ri-phone-fill"></i>
+                                <h6 class="text-white fw-bold mb-1">Phone</h6>
+                                <a href="tel:30098765432150" class="text-white link-hover-secondary transition">(+30) 098765432150</a>
+                            </li>
+                        </ul>
+                        <div class="comp-map round-20">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8385385572983!2d144.95358331584498!3d-37.81725074201705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4dd5a05d97%3A0x3e64f855a564844d!2s121%20King%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sbd!4v1612419490850!5m2!1sen!2sbd">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar End-->
+
+                <!-- Breadcrumb Section Start -->
+                <div class="breadcrumb-area bg-f position-relative z-1" style="background-image: url(assets/img/br-bg.jpg);">
+                    <div class="container-fluid style-two">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h2 class="section-title style-two fw-semibold ls-n2 text-white mb-20">Practice Area</h2>
+                                <ul class="d-inline-flex flex-wrap align-items-center list-unstyled mb-0">
+                                    <li class="position-relative"><a href="index.html">Home</a></li>
+                                    <li class="position-relative">Practice Area</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <div class="circle-text-wrap position-relative d-flex flex-column align-items-center justify-content-center rounded-circle ms-md-auto me-md-0 ms-auto me-auto mt-4 mt-md-0">
+                                    <img src="assets/img/circle-text-breadcrumb.svg" alt="Image text" class="rotate">
+                                    <img src="assets/img/icons/fav-icon.svg" alt="Icon" class="fav-icon position-absolute top-50 start-50">
+                                    <a href="contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Breadcrumb Section End -->
+
+                <!-- Practice Area Start -->
+                <div class="container ptb-115">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 text-center">
+                            <h6 class="fs-16 fw-normal text-para mb-12">Our Practice Areas</h6>
+                            <h2 class="section-title style-one fw-semibold text-title mb-45">Comprehensive legal services tailored to meet your specific needs and achieve the best possible outcomes</h2>
+                        </div>
+                    </div>
+                    <div class="practice-card-wrap">
+                        <div class="practice-card style-one d-flex flex-wrap">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-3 mb-lg-0 mb-3">
+                                    <span class="practice-counter position-relative">01.</span>
+                                </div>
+                                <div class="col-lg-5 col-md-9 pe-xl-5 mb-lg-0 mb-4">
+                                    <div class="practice-card-info me-xxl-5">
+                                        <h3 class="fs-24 fw-semibold mb-15"><a href="practice-area-details.html" class="text-title link-hover-primary transition">Commercial Litigation</a></h3>
+                                        <p class="mb-0">Our litigation team handles complex business disputes with strategic approach tailored to protect your interests and achieve favorable outcomes.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 ps-xl-1 mb-md-0 mb-4">
+                                    <ul class="practice-features list-unstyled mb-0">
+                                        <li class="position-relative">Contract disputes</li>
+                                        <li class="position-relative">Business torts</li>
+                                        <li class="position-relative">Partnership disputes</li>
+                                        <li class="position-relative">Shareholder litigation</li>
+                                        <li class="position-relative">Class action defense</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-8">
+                                    <div class="practice-img position-relative img-scale overflow-hidden round-20 mt-xl-2">
+                                        <img src="assets/img/practice-area/practice-1.jpg" alt="Image" class="d-block ms-auto grow-right round-20 transition">
+                                        <a href="practice-area-details.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="practice-card style-one d-flex flex-wrap">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-3 mb-lg-0 mb-3">
+                                    <span class="practice-counter position-relative">02.</span>
+                                </div>
+                                <div class="col-lg-5 col-md-9 pe-xl-5 mb-lg-0 mb-4">
+                                    <div class="practice-card-info me-xxl-5">
+                                        <h3 class="fs-24 fw-semibold mb-15"><a href="practice-area-details.html" class="text-title link-hover-primary transition">Corporate Law</a></h3>
+                                        <p class="mb-0">We provide comprehensive corporate legal services to businesses of all sizes, from formation to complex transactions and compliance matters.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 ps-xl-1 mb-md-0 mb-4">
+                                    <ul class="practice-features list-unstyled mb-0">
+                                        <li class="position-relative">CBusiness formation</li>
+                                        <li class="position-relative">CMergers & acquisitions</li>
+                                        <li class="position-relative">CCorporate governance</li>
+                                        <li class="position-relative">CContract drafting</li>
+                                        <li class="position-relative">CRegulatory compliance</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-8">
+                                    <div class="practice-img position-relative img-scale overflow-hidden round-20 mt-xl-2">
+                                        <img src="assets/img/practice-area/practice-2.jpg" alt="Image" class="d-block ms-auto grow-right round-20 transition">
+                                        <a href="practice-area-details.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="practice-card style-one d-flex flex-wrap">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-3 mb-lg-0 mb-3">
+                                    <span class="practice-counter position-relative">03.</span>
+                                </div>
+                                <div class="col-lg-5 col-md-9 pe-xl-5 mb-lg-0 mb-4">
+                                    <div class="practice-card-info me-xxl-5">
+                                        <h3 class="fs-24 fw-semibold mb-15"><a href="practice-area-details.html" class="text-title link-hover-primary transition">Family Law</a></h3>
+                                        <p class="mb-0">We approach family law matters with compassion and sensitivity, providing strong advocacy during difficult personal transitions.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 ps-xl-1 mb-md-0 mb-4">
+                                    <ul class="practice-features list-unstyled mb-0">
+                                        <li class="position-relative">Divorce proceedings</li>
+                                        <li class="position-relative">Child custody</li>
+                                        <li class="position-relative">Spousal support</li>
+                                        <li class="position-relative">Prenuptial agreements</li>
+                                        <li class="position-relative">Adoption services</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-8">
+                                    <div class="practice-img position-relative img-scale overflow-hidden round-20 mt-xl-2">
+                                        <img src="assets/img/practice-area/practice-3.jpg" alt="Image" class="d-block ms-auto grow-right round-20 transition">
+                                        <a href="practice-area-details.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="practice-card style-one d-flex flex-wrap">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-3 mb-lg-0 mb-3">
+                                    <span class="practice-counter position-relative">04.</span>
+                                </div>
+                                <div class="col-lg-5 col-md-9 pe-xl-5 mb-lg-0 mb-4">
+                                    <div class="practice-card-info me-xxl-5">
+                                        <h3 class="fs-24 fw-semibold mb-15"><a href="practice-area-details.html" class="text-title link-hover-primary transition">Real Estate Law</a></h3>
+                                        <p class="mb-0">From residential transactions to complex commercial developments, we handle all real estate legal matters.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 ps-xl-1 mb-md-0 mb-4">
+                                    <ul class="practice-features list-unstyled mb-0">
+                                        <li class="position-relative">Commercial real estate transactions</li>
+                                        <li class="position-relative">Residential real estate closings</li>
+                                        <li class="position-relative">Land use & zoning</li>
+                                        <li class="position-relative">Lease agreements</li>
+                                        <li class="position-relative">Real estate litigation</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-8">
+                                    <div class="practice-img position-relative img-scale overflow-hidden round-20 mt-xl-2">
+                                        <img src="assets/img/practice-area/practice-4.jpg" alt="Image" class="d-block ms-auto grow-right round-20 transition">
+                                        <a href="practice-area-details.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="practice-card style-one d-flex flex-wrap">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-3 mb-lg-0 mb-3">
+                                    <span class="practice-counter position-relative">05.</span>
+                                </div>
+                                <div class="col-lg-5 col-md-9 pe-xl-5 mb-lg-0 mb-4">
+                                    <div class="practice-card-info me-xxl-5">
+                                        <h3 class="fs-24 fw-semibold mb-15"><a href="practice-area-details.html" class="text-title link-hover-primary transition">Commercial Litigation</a></h3>
+                                        <p class="mb-0">We help businesses navigate complex employment regulations and represent employees in workplace disputes.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 ps-xl-1 mb-md-0 mb-4">
+                                    <ul class="practice-features list-unstyled mb-0">
+                                        <li class="position-relative">Employment contracts</li>
+                                        <li class="position-relative">Workplace policies & handbooks</li>
+                                        <li class="position-relative">Discrimination & harassment claims</li>
+                                        <li class="position-relative">Wrongful termination cases</li>
+                                        <li class="position-relative">Labor relations</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-8">
+                                    <div class="practice-img position-relative img-scale overflow-hidden round-20 mt-xl-2">
+                                        <img src="assets/img/practice-area/practice-5.jpg" alt="Image" class="d-block ms-auto grow-right round-20 transition">
+                                        <a href="practice-area-details.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="practice-card style-one img-hover-scale d-flex flex-wrap">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-3 mb-lg-0 mb-3">
+                                    <span class="practice-counter position-relative">06.</span>
+                                </div>
+                                <div class="col-lg-5 col-md-9 pe-xl-5 mb-lg-0 mb-4">
+                                    <div class="practice-card-info me-xxl-5">
+                                        <h3 class="fs-24 fw-semibold mb-15"><a href="practice-area-details.html" class="text-title link-hover-primary transition">Estate Planning</a></h3>
+                                        <p class="mb-0">Plan for the future with comprehensive estate planning services tailored to your unique circumstances.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 ps-xl-1 mb-md-0 mb-4">
+                                    <ul class="practice-features list-unstyled mb-0">
+                                        Contract disputes</li>
+                                        <li class="position-relative">Wills & trusts</li>
+                                        <li class="position-relative">Estate administration</li>
+                                        <li class="position-relative">Probate proceedings</li>
+                                        <li class="position-relative">Power of attorney</li>
+                                        <li class="position-relative">Healthcare directives</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-8">
+                                    <div class="practice-img position-relative img-scale overflow-hidden round-20 mt-xl-2">
+                                        <img src="assets/img/practice-area/practice-6.jpg" alt="Image" class="d-block ms-auto grow-right round-20 transition">
+                                        <a href="practice-area-details.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Practice Area End -->
+                    
+                <!-- Proess Section Start -->
+                <div class="container pb-85">
+                    <div class="row">
+                        <div class="col-xxl-6 offset-xxl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-center">
+                            <h6 class="fs-16 fw-normal text-para mb-12">Our Approach</h6>
+                            <h2 class="section-title style-one fw-semibold text-title mb-45 px-xxl-3 px-xl-5">How we deliver exceptional legal services to our clients</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xxl-3 col-xl-4 col-md-6 mb-30">
+                            <div class="process-card style-three round-20 h-100">
+                                <div class="d-flex flex-wrap align-items-start justify-content-between pb-80">
+                                    <span class="process-counter fs-20 fw-semibold position-relative">01.</span>
+                                    <img src="assets/img/icons/case-evalution.svg" alt="Icon">
+                                </div>
+                                <h3 class="fs-24 fw-semibold mb-18 pe-xl-5">Initial Consultation</h3>
+                                <p class="mb-0">We begin with a detailed discussion to understand your situation,goals, and concerns.</p>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-4 col-md-6 mb-30">
+                            <div class="process-card style-three round-20 h-100">
+                                <div class="d-flex flex-wrap align-items-start justify-content-between pb-80">
+                                    <span class="process-counter fs-20 fw-semibold position-relative">02.</span>
+                                    <img src="assets/img/icons/strategic-planning.svg" alt="Icon">
+                                </div>
+                                <h3 class="fs-24 fw-semibold mb-18 pe-xl-5 me-xl-4">Case Evaluation</h3>
+                                <p class="mb-0">Our legal team thoroughly analyzes your case to develop the most effective strategy.</p>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-4 col-md-6 mb-30">
+                            <div class="process-card style-three round-20 h-100">
+                                <div class="d-flex flex-wrap align-items-start justify-content-between pb-80">
+                                    <span class="process-counter fs-20 fw-semibold position-relative">03.</span>
+                                    <img src="assets/img/icons/execution.svg" alt="Icon">
+                                </div>
+                                <h3 class="fs-24 fw-semibold mb-18 pe-xl-5">Strategis Planning</h3>
+                                <p class="mb-0">We create a customized legal plan tailored to your specific objectives and circumstances.</p>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-4 col-md-6 mb-30">
+                            <div class="process-card style-three round-20 h-100">
+                                <div class="d-flex flex-wrap align-items-start justify-content-between pb-80">
+                                    <span class="process-counter fs-20 fw-semibold position-relative">04.</span>
+                                    <img src="assets/img/icons/resolution.svg" alt="Icon">
+                                </div>
+                                <h3 class="fs-24 fw-semibold mb-18 pe-xl-5">Execution & Representation</h3>
+                                <p class="mb-0">We diligently work on your behalf, providing skilled representation every step.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proess Section End -->
+
+                <!-- Why Choose Us Section Start -->
+                <div class="container pb-90">
+                    <div class="row">
+                        <div class="col-lg-5 mb-lg-0 mb-4">
+                            <div class="position-lg-sticky">
+                                <h6 class="fs-16 fw-normal text-para mb-12">Why Choose Olawx</h6>
+                                <h2 class="section-title style-one fw-semibold text-title mb-0">Committed to quality, integrity, and the best results for those we serve.</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 ps-xxl-4">
+                            <div class="wh-card style-one bg_white round-20 mb-25">
+                                <div class="row mb-22">
+                                    <div class="col-xl-5 col-md-4 mb-md-0 mb-4">
+                                        <img src="assets/img/icons/experience.svg" alt="Icon">
+                                    </div>
+                                    <div class="col-xl-7 col-md-8">
+                                        <img src="assets/img/why-choose-us/wh-1.jpg" alt="Icon" class="grow-right round-10">
+                                    </div>
+                                </div>
+                                <h3 class="fs-24 fw-semibold mb-15">Decades Of Experience</h3>
+                                <p class="mb-0">With over 40 years of combined experience, our attorneys have handled some of the most complex legal challenges across multiple practice areas.</p>
+                            </div>
+                            <div class="wh-card style-one bg_white round-20 mb-25">
+                                <div class="row mb-22">
+                                    <div class="col-xl-5 col-md-4 mb-md-0 mb-4">
+                                        <img src="assets/img/icons/track-record-2.svg" alt="Icon">
+                                    </div>
+                                    <div class="col-xl-7 col-md-8">
+                                        <img src="assets/img/why-choose-us/wh-2.jpg" alt="Icon" class="grow-right round-10">
+                                    </div>
+                                </div>
+                                <h3 class="fs-24 fw-semibold mb-15">Proven track Record</h3>
+                                <p class="mb-0">We have a history of achieving favorable outcomes for our clients, with a success rate that exceeds industry averages.</p>
+                            </div>
+                            <div class="wh-card style-one bg_white round-20 mb-25">
+                                <div class="row mb-22">
+                                    <div class="col-xl-5 col-md-4 mb-md-0 mb-4">
+                                        <img src="assets/img/icons/client-approach-2.svg" alt="Icon">
+                                    </div>
+                                    <div class="col-xl-7 col-md-8">
+                                        <img src="assets/img/why-choose-us/wh-3.jpg" alt="Icon" class="grow-right round-10">
+                                    </div>
+                                </div>
+                                 <h3 class="fs-24 fw-semibold mb-15">Client-first Approach</h3>
+                                <p class="mb-0">Your goals and concerns are at the center of our strategy. We prioritize clear communication and personalized service.</p>
+                            </div>
+                            <div class="wh-card style-one bg_white round-20 mb-25">
+                                <div class="row mb-22">
+                                    <div class="col-xl-5 col-md-4 mb-md-0 mb-4">
+                                        <img src="assets/img/icons/stratigies.svg" alt="Icon">
+                                    </div>
+                                    <div class="col-xl-7 col-md-8">
+                                        <img src="assets/img/why-choose-us/wh-4.jpg" alt="Icon" class="grow-right round-10">
+                                    </div>
+                                </div>
+                                 <h3 class="fs-24 fw-semibold mb-15">Innovative Strategies</h3>
+                                <p class="mb-0">We combine traditional legal expertise with cutting-edge approaches to develop winning strategies for your case.</p>
+                            </div>
+                            <div class="wh-card style-one bg_white round-20 mb-25">
+                                <div class="row mb-22">
+                                    <div class="col-xl-5 col-md-4 mb-md-0 mb-4">
+                                        <img src="assets/img/icons/pricing.svg" alt="Icon">
+                                    </div>
+                                    <div class="col-xl-7 col-md-8">
+                                        <img src="assets/img/why-choose-us/wh-5.jpg" alt="Icon" class="grow-right round-10">
+                                    </div>
+                                </div>
+                                <h3 class="fs-24 fw-semibold mb-15">Transparent Pricing</h3>
+                                <p class="mb-0">No hidden fees or surprises. We offer clear, competitive pricing structures and detailed billing explanations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Why Choose Us Section End -->
+
+                <!-- Promo Area Start -->
+                <div class="bg-dawnPink ptb-115">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 offset-xl-2 col-md-10 offset-md-1 text-center px-xxl-5">
+                                <h2 class="section-title style-two fw-semibold text-center text-title ls-n2 mb-18">Need Legal Assistance?</h2>
+                                <p class="px-xxl-5 mx-xxl-5 mb-45">Schedule a consultation with our experienced corporate attorneys to discuss your business needs</p>
+                                <a href="appointment.html" class="btn style-one d-inline-flex flex-wrap align-items-center transition">
+                                    <span class="btn-text d-flex flex-column align-items-center justify-content-center transition">Request A Consultation</span>
+                                    <span class="btn-icon d-flex flex-column align-items-center justify-content-center transition"><img src="assets/img/icons/right-arrow.svg" alt="Icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Area End -->
+
+                <!-- Footer Section Start -->
+                <footer class="footer-area style-three bg-title pt-115">
+                    <div class="container">
+                        <div class="row pb-85">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <a href="index.html" class="logo d-block mb-22">
+                                        <img src="assets/img/logo-white.png" alt="Logo">
+                                    </a>
+                                    <h3 class="fs-20 fw-semibold text_secondary">Newsletter</h3>
+                                    <p class="mb-18">Subscribe to our newsletter for the latest legal updates news</p>
+                                    <form action="#" class="newsletter-form style-two position-relative">
+                                        <input type="email" class="w-100 bg-transparent text-white outline-0" placeholder="Email address">
+                                        <button class="bg-transparent border-0 position-absolute text_secondary end-0"><i class="ri-send-plane-2-line"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 offset-xl-1 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <ul class="contact-info list-unstyled mb-0">
+                                        <li>
+                                            <span class="d-block mb-1 text-white">Call Us</span>
+                                            <a href="tel:15555078494" class="text_secondary fw-bold hover-text-primary transition">+1 (555) 507-8494</a>
+                                        </li>
+                                        <li>
+                                            <span class="d-block mb-1 text-white">Email Us</span>
+                                            <a href="mailto:info@olawx.com" class="text_secondary fw-semibold hover-text-primary transition">info@olawx.com</a>
+                                        </li>
+                                        <li>
+                                            <span class="d-block mb-1 text-white">Address</span>
+                                            <p class="mb-0 pe-xxl-5">753 Legal Avenue, Suite 159, NY 10101, New York, USA</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <h3 class="footer-widget-title fs-20 fw-semibold text_secondary mb-30">Practice
+                                        Areas</h3>
+                                    <ul class="footer-menu style-two list-unstyled mb-0">
+                                        <li><a href="practice-areas.html">Commercial Litigation</a>
+                                        <li><a href="practice-areas.html">Corporate Law</a>
+                                        <li><a href="practice-areas.html">Intellectual Property</a>
+                                        <li><a href="practice-areas.html">Family Law</a>
+                                        <li><a href="practice-areas.html">Real Estate Law</a>
+                                        <li><a href="practice-areas.html">Employment Law</a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <h3 class="footer-widget-title fs-20 fw-semibold text_secondary mb-30">Quick Links
+                                    </h3>
+                                    <ul class="footer-menu style-two list-unstyled mb-0">
+                                        <li><a href="index.html">Home</a>
+                                        <li><a href="about-us.html">About Us</a>
+                                        <li><a href="practice-areas.html">Case Studies</a>
+                                        <li><a href="privacy-policy.html">Privacy Policy</a>
+                                        <li><a href="terms-conditions.html">Terms & Conditions</a>
+                                        <li><a href="contact.html">Contact Us</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="row align-items-center">
+                                <div class="col-md-7 pe-md-0 mb-sm-10">
+                                    <p class="copyright-text text-offwhite text-md-start text-center mb-0"><i class="ri-copyright-line"></i><span class="text-white fw-semibold ms-1 me-1">Olawx</span> Is Proudly Owned By <a href="https://envytheme.com/" target="_blank" class="text_secondary fw-semibold link-hover-secondary transition">EnvyTheme</a>
+                                    </p>
+                                </div>
+                                <div class="col-md-5 text-md-end text-center">
+                                    <ul class="social-profile style-two list-unstyled mb-0">
+                                        <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-facebook-fill"></i></a></li>
+                                        <li><a href="https://x.com/?lang=en" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-twitter-x-line"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-linkedin-fill"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-instagram-line"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+
+            </div>
+        </div>
+            <!-- Back to Top -->
+            <div id="progress-wrap" class="progress-wrap style-one">
+                <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                    <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+                </svg>
+            </div>
+            <!-- Link of JS files -->
+            <script src="assets/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/js/megamenu.js"></script>
+            <script src="assets/js/swiper-bundle.min.js"></script>
+            <script src="assets/js/fslightbox.js"></script>
+            <script src="assets/js/gsap.min.js"></script>
+            <script src="assets/js/scrollTrigger.min.js"></script>
+            <script src="assets/js/lenis.min.js"></script>
+            <script src="assets/js/scrollToPlugin.js"></script>
+            <script src="assets/js/SplitText.min.js"></script>
+            <script src="assets/js/customEase.js"></script>
+            <script src="assets/js/scrollcue.min.js"></script>
+            <script src="assets/js/main.js"></script>
+    </body>
+</html>

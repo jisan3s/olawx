@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zxx">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Link of CSS files -->
+        <link id="bootstrapStylesheet" rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/scrollcue.min.css">
+        <link rel="stylesheet" href="assets/css/remixicon.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <title>Olawx - Law Firm & Attorney HTML Template</title>
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    </head>
+    <body class="bg-linen">
+
+        <!--  Preloader Start -->
+        <div class="preloader-area" id="preloader">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--  Preloader End -->
+
+        <!-- Theme Switcher Start -->
+        <div class="theme-switcher">
+            <button class="toggle-switch-btn border-0"><i class="ri-settings-2-line rotate"></i></button>
+            <div class="switch-theme-mode mb-20">
+                <label id="switch" class="switch d-flex align-items-center">
+                    <small class="left text-title">Light</small>
+                    <input type="checkbox" onchange="toggleTheme()" id="slider">
+                    <span class="slider round"></span>
+                    <small class="right text-title">Dark</small>
+                </label>
+            </div>
+            <!-- RTL Switcher -->
+            <div class="rtl-switch">
+                <label class=" d-flex flex-wrap align-items-center">
+                    <small class="ltr text-title">LTR</small>
+                    <input type="checkbox" id="directionToggle">
+                    <span class="slider round"></span>
+                    <small class="rtl text-title">RTL</small>
+                </label>
+            </div>
+        </div>
+
+        <!-- Custom Cursor -->
+        <div class="cursor">
+            <span class="cursor-text d-flex flex-column align-items-center justify-content-center rounded-circle bg-white text-title fs-14 fw-semibold"></span>
+        </div>
+        <div class="cursor-inner"></div>
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                
+                <!-- Navbar Area Start -->
+                <div class="navbar-area style-one position-relative z-2" id="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-wrapper d-flex align-items-xl-end align-items-center">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="assets/img/logo-white.png" alt="Logo">
+                            </a>
+                            <div class="menu-wrapper d-flex align-items-center ms-auto">
+                                <div class="menu-area">
+                                    <div class="overlay"></div>
+                                    <nav class="menu">
+                                        <div class="menu-mobile-header">
+                                            <button type="button" class="menu-mobile-arrow bg-transparent border-0"><i class="ri-arrow-left-s-line"></i></button>
+                                            <div class="menu-mobile-title"></div>
+                                            <button type="button" class="menu-mobile-close bg-transparent border-0"><i class="ri-close-line"></i></button>
+                                        </div>
+                                        <ul class="menu-section p-0 mb-0 lh-1">
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Home<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li class="list-item">
+                                                        <a href="index.html">Home - Law Firm</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="index-2.html">Home - Empowering justice</a>
+                                                    </li>
+                                                    <li class="list-item">
+                                                        <a href="index-3.html">Home - Law Firm Agency</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Pages<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li><a href="about-us.html">About Us</a></li>
+                                                    <li class="menu-item-has-children">
+                                                        <a href="javascript:void(0)">Attorneys<i class="ri-arrow-right-s-line"></i></a>
+                                                        <ul class="menu-subs menu-column-1">
+                                                            <li><a href="attorneys.html">Attorneys</a></li>
+                                                            <li><a href="attorney-details.html">Attorneys Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="our-clients.html">Our Clients</a></li>
+                                                    <li><a href="appointment.html">Appointment</a></li>
+                                                    <li><a href="pricing-plan.html">Pricing Plan</a></li>
+                                                    <li><a href="faq.html">FAQ</a></li>
+                                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                                    <li><a href="career.html">Career</a></li>
+                                                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                                    <li><a href="error-404.html">Error 404</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Practice Areas<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li><a href="practice-areas.html">Practice Areas</a></li>
+                                                    <li><a href="practice-area-details.html">Practice Area Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Case Studies<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li><a href="case-studies.html">Case Studies</a></li>
+                                                    <li><a href="case-study-details.html">Case Study Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)">Blog<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li class="menu-item-has-children"><a href="javascript:void(0)">Blog
+                                                            Layout<i class="ri-arrow-right-s-line"></i></a>
+                                                        <ul class="menu-subs menu-column-1">
+                                                            <li><a href="blog.html">Blog</a></li>
+                                                            <li><a href="blog-standard.html">Standard</a></li>
+                                                            <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item-has-children"><a href="javascript:void(0)"> Blog
+                                                            Details<i class="ri-arrow-right-s-line"></i></a>
+                                                        <ul class="menu-subs menu-column-1">
+                                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                                            <li><a href="blog-details-left-sidebar.html">With Left Sidebar</a>
+                                                            </li>
+                                                            <li><a href="blog-details-right-sidebar.html">With Right Sidebar</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item-has-children"><a href="javascript:void(0)">Others<i class="ri-arrow-right-s-line"></i></a>
+                                                        <ul class="menu-subs menu-column-1">
+                                                            <li><a href="author.html">Author</a></li>
+                                                            <li><a href="category.html">Category</a></li>
+                                                            <li><a href="tag.html">Tag</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0)" class="active">Shop<i class="ri-arrow-down-s-line"></i></a>
+                                                <ul class="menu-subs menu-column-1">
+                                                    <li><a href="shop.html">Shop</a></li>
+                                                    <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
+                                                    <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                                    <li><a href="shop-details.html" class="active">Shop Details</a></li>
+                                                    <li><a href="cart.html">Cart</a></li>
+                                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="login.html">Login</a></li>
+                                                    <li><a href="register.html">Register</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+                                    <div class="option-item position-relative">
+                                        <button class="search-btn border-0 d-flex flex-column align-items-center justify-content-center dropdown-toggle text-white rounded-circle transition" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                            <i class="ri-search-line"></i>
+                                            <i class="ri-close-line"></i>
+                                        </button>
+                                        <div class="search-dropdown dropdown-menu dropdown-menu-right top-1 border-0" data-bs-popper="static">
+                                            <form class="search-popup position-relative" action="#">
+                                                <input type="search" class="form-control text-para" placeholder="Search Here">
+                                                <button type="submit" class="position-absolute top-0 end-0 h-100 border-0 bg-transparent d-flex flex-column align-items-center justify-content-center"><i class="ri-search-2-line"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="option-item">
+                                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar-area" aria-controls="sidebar-area" class="sidebar-btn p-0 d-flex flex-column align-items-center justify-content-center rounded-circle text-white transition border-0">
+                                            <i class="ri-menu-3-fill"></i>
+                                        </button>
+                                    </div>
+                                    <div class="option-item d-lg-none">
+                                        <button type="button" class="menu-mobile-trigger">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navbar Area End -->
+
+                <!-- Sidebar Start-->
+                <div class="sidebar-wrap offcanvas bg-ash offcanvas-end border-0" tabindex="-1" id="sidebar-area">
+                    <div class="offcanvas-header d-flex flex-wrap align-items-center justify-content-between">
+                        <a href="index.html" class="logo d-block">
+                            <img src="assets/img/logo-white.png" alt="Logo">
+                        </a>
+                        <button type="button" class="close-btn bg_white border-0 text-title d-flex flex-column align-items-center justify-content-center rounded-circle p-0 transition" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="ri-close-line"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body position-relative z-1">
+                        <p class="text-white mb-25">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat illo tenetur sapiente laborum quibusdam est veniam dignissimos doloremque esse aliquam!</p>
+                        <ul class="contact-info list-unstyled mb-30">
+                            <li class="position-relative">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <h6 class="text-white fw-bold mb-1">Location</h6>
+                                <p class="text-white mb-0">15 Washington Square, New York, USA</p>
+                            </li>
+                            <li class="position-relative">
+                                <i class="ri-mail-fill"></i>
+                                <h6 class="text-white fw-bold mb-1">Email</h6>
+                                <a href="mailto:hello@olawx.com" class="text-white link-hover-secondary transition">hello@olawx.com</a>
+                            </li>
+                            <li class="position-relative">
+                                <i class="ri-phone-fill"></i>
+                                <h6 class="text-white fw-bold mb-1">Phone</h6>
+                                <a href="tel:30098765432150" class="text-white link-hover-secondary transition">(+30) 098765432150</a>
+                            </li>
+                        </ul>
+                        <div class="comp-map round-20">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8385385572983!2d144.95358331584498!3d-37.81725074201705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4dd5a05d97%3A0x3e64f855a564844d!2s121%20King%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sbd!4v1612419490850!5m2!1sen!2sbd">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar End-->
+
+                <!-- Breadcrumb Section Start -->
+                <div class="breadcrumb-area bg-f position-relative z-1" style="background-image: url(assets/img/br-bg.jpg);">
+                    <div class="container-fluid style-two">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h2 class="section-title style-two fw-semibold ls-n2 text-white mb-20">Shop Details</h2>
+                                <ul class="d-inline-flex flex-wrap align-items-center list-unstyled mb-0">
+                                    <li class="position-relative"><a href="index.html">Home</a></li>
+                                    <li class="position-relative"><a href="shop.html">Shop</a></li>
+                                    <li class="position-relative">Shop Details</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <div class="circle-text-wrap position-relative d-flex flex-column align-items-center justify-content-center rounded-circle ms-md-auto me-md-0 ms-auto me-auto mt-4 mt-md-0">
+                                    <img src="assets/img/circle-text-breadcrumb.svg" alt="Image text" class="rotate">
+                                    <img src="assets/img/icons/fav-icon.svg" alt="Icon" class="fav-icon position-absolute top-50 start-50">
+                                    <a href="contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Breadcrumb Section End -->
+
+                <!-- Blog Details Start -->
+                <div class="container ptb-115">
+                    <div class="row align-items-xxl-start align-items-center pb-115">
+                        <div class="col-lg-6 pe-xxl-1 mb-4 mb-lg-0">
+                            <div class="single-product-img d-flex flex-column align-items-center justify-content-center round-20">
+                                <img src="assets/img/products/single-product-1.png" alt="Image" class="d-block mx-auto transition">
+                            </div>
+                        </div>
+                        <div class="col-xxl-5 offset-xxl-1 col-lg-6 pe-xxl-1">
+                             <div class="single-product-details ps-xxl-2">
+                                <h1 class="fw-semibold">Prosperous power of faith</h1>
+                                <span class="fs-20 fw-semibold d-block text-title mb-12"><del class="fs-16 fw-normal text-para me-2">$75.00</del>$60.00</span>
+                                <div class="ratings d-flex flex-wrap align-items-center">
+                                    <div class="d-flex flex-wrap align-items-center fs-22 text_secondary lh-1">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                    <a href="#review_wrap" class="text-para hover-text-secondary ms-2 d-inline-block lh-1 mb-1">4.9/5(47 Reviews)</a>
+                                </div>
+                                <p class="product-desc me-xxl-5">Discover how to harness the transformative power of faith to create abundance, purpose, and fulfillment in every area of life.</p>
+                                <div class="product-add-to-cart d-flex flex-wrap align-items-center mb-12">
+                                    <div class="v-counter d-flex flex-wrap align-items-center justify-content-between me-2 mb-12">
+                                        <input type="text" size="25" value="1" class="count" />
+                                        <button class="plusBtn bg-transparent border-0">
+                                        </button>
+                                        <button class="minusBtn bg-transparent border-0">
+                                        </button>
+                                    </div>
+                                    <button class="btn style-one d-inline-flex flex-wrap align-items-center transition mb-12">
+                                        <span class="btn-text d-flex flex-column align-items-center justify-content-center transition">Add To Cart</span>
+                                        <span class="btn-icon d-flex flex-column align-items-center justify-content-center transition"><img src="assets/img/icons/right-arrow.svg" alt="Icon"></span>
+                                    </button>
+                                </div>
+                                <ul class="product-features list-unstyled mb-22">
+                                    <li class="d-flex align-items-center"><span class="text-title fw-semibold me-2">Availability:</span><span class="text-success">In Stock</span></li>
+                                    <li class="d-flex align-items-center"><span class="text-title fw-semibold me-2">Category:</span><a href="shop.html" class="text-para hover-text-secondary">Business Law</a></li>
+                                    <li class="d-flex align-items-center"><span class="text-title fw-semibold me-2">Tags:</span><a href="shop.html" class="text-para hover-text-secondary">Attorney</a>,<a href="shop.html" class="text-para hover-text-secondary">Corporate Law</a></li>
+                                    <li class="d-flex align-items-center"><span class="text-title fw-semibold me-2">Published :</span> <span>June 2025</span></li>
+                                    <li class="d-flex align-items-center"><span class="text-title fw-semibold me-2">SKU:</span><span>Osl4k7e</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container style-one">
+                            <ul class="nav nav-tabs list-unstyled product-tablist d-flex align-items-center justify-content-start w-100 mb-25" role="tablist">
+                                <li class="nav-item border-0">
+                                    <button class="nav-link border-0 active" data-bs-toggle="tab" data-bs-target="#product_desc" type="button" role="tab">Description</button>
+                                </li>
+                                <li class="nav-item border-0">
+                                    <button id="review_wrap" class="nav-link border-0" data-bs-toggle="tab" data-bs-target="#product_review" type="button" role="tab">Reviews(2)</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content product-tab-content">
+                                <div class="tab-pane fade show active" id="product_desc" role="tabpanel">
+                                    <p>"Prosperous Power of Faith" is a transformative guide that explores the profound connection between spiritual faith and material abundance. Drawing from ancient wisdom and modern psychology, Dr. Robert Olson presents a practical framework for cultivating a faith-filled mindset that attracts success and fulfillment.</p>
+                                    <p>This groundbreaking work challenges conventional notions about prosperity and spirituality, demonstrating how they can work in harmony to create a life of purpose, abundance, and joy. Through powerful anecdotes, practical exercises, and profound insights, readers will learn to unlock their innate potential and create the life they've always envisioned.</p>
+                                    <h3 class="fs-24 fw-semibold mb-20 mt-4">What You'll Learn</h3>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-15">
+                                            <span class="text-title fw-semibold">Cultivate Unshakable Faith</span>
+                                            <p class="mb-0">Develop a faith mindset that withstands life's challenges</p>
+                                        </li>
+                                        <li class="mb-15">
+                                            <span class="text-title fw-semibold">Attract Financial Abundance</span>
+                                            <p class="mb-0">Apply spiritual principles to create material prosperity</p>
+                                        </li>
+                                        <li class="mb-15">
+                                            <span class="text-title fw-semibold">Improve Relationships</span>
+                                            <p class="mb-0">Build deeper connections through faith-based principles</p>
+                                        </li>
+                                        <li class="mb-15">
+                                            <span class="text-title fw-semibold">Find Life Purpose</span>
+                                            <p class="mb-0">Discover your divine calling and align with your true path</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="product_add_info" role="tabpanel">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque </p>
+                                    <ul class="feature-list style-one list-unstyled mb-0">
+                                        <li class="position-relative"><span class="text-title fw-medium me-2">Flexibility:</span>Learn anytime, anywhere, at your own pace.</li>
+                                        <li class="position-relative"><span class="text-title fw-medium me-2">Affordability:</span> Save money on travel, accommodation, and tuition fees.</li>
+                                        <li class="position-relative"><span class="text-title fw-medium me-2">Diverse Courses:</span>Access a wide range of subjects from top institutions.</li>
+                                        <li class="position-relative"><span class="text-title fw-medium me-2">Global Networking:</span>Connect with instructors and learners worldwide.</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="product_review" role="tabpanel">
+                                    <div class="comment-item-wrap mb-40">
+                                        <div class="comment-item d-flex flex-wrap round-20">
+                                            <div class="comment-author-img rounded-circle">
+                                                <img src="assets/img/clients/client-1.jpg" alt="Image" class="rounded-circle">
+                                            </div>
+                                            <div class="comment-author-info">
+                                                <div class="row align-items-center">
+                                                    <div class="col-md-9">
+                                                        <h5 class="fs-18 fw-bold text-title mb-2">Stephen Eaton</h5>
+                                                        <div class="d-flex flex-wrap align-items-center fs-16 text_secondary lh-1">
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 pe-xxl-5">
+                                                        <p class="comment-text pe-xl-4">We envision a world where our contributions help build stronger communities, empower individuals, and set new standards of excellence across our industry and beyond. There are many variations of passages of lorem Ipsum available but the majority have suffered alteration</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-item d-flex flex-wrap round-20">
+                                            <div class="comment-author-img rounded-circle">
+                                                <img src="assets/img/clients/client-3.jpg" alt="Image" class="rounded-circle">
+                                            </div>
+                                            <div class="comment-author-info">
+                                                <div class="row align-items-center">
+                                                    <div class="col-md-9 order-md-1 order-1">
+                                                        <h5 class="fs-18 fw-bold text-title mb-2">Luke Munguia</h5>
+                                                        <div class="d-flex flex-wrap align-items-center fs-16 text_secondary lh-1">
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 order-md-3 order-2 pe-xxl-5">
+                                                        <p class="comment-text pe-xl-4">For used cars, details like mileage, maintenance history, and any past accidents or repairs are important for evaluating the vehicle’s condition and overall value. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto natus mollitia itaque. Officiis, ullam ipsam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="fs-22 fw-semibold text-title mb-1">Add A Review</h2>
+                                    <p class="mb-25">Your email address will not be published. Required fields are marked</p>
+                                    <form action="#" class="form-wrapper style-two">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group mb-15">
+                                                    <span class="fs-18 fw-semibold d-block text-title">Rate this item</span>
+                                                    <div class="add-star-rating mt-1">
+                                                        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                                                        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                                                        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                                                        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                                                        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-20">
+                                                    <label for="name" class="d-blck text-title w-100 mb-8">Name*</label>
+                                                    <input type="text" name="name" id="name" class="w-100 ht-54 text-para outline-0 round-5" placeholder="Brittney Hopkins">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-20">
+                                                    <label for="email" class="d-blck text-title w-100 mb-8">Email*</label>
+                                                    <input type="email" name="email" id="email" class="w-100 ht-54 text-para outline-0 round-5" placeholder="brittney@olawx.com">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group mb-25">
+                                                    <label for="comment" class="d-blck text-title w-100 mb-8">Comment</label>
+                                                    <textarea name="comment" id="comment" class="w-100 ht-150 text-para outline-0 round-5 resize-0" placeholder="Write your comment here..."></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check checkbox style-one mb-25">
+                                                    <input class="form-check-input" type="checkbox" id="test_2"
+                                                    >
+                                                    <label class="form-check-label" for="test_2">
+                                                        Save my name, email, and website in this browser for the next time I comment.
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn style-one d-inline-flex flex-wrap align-items-center transition">
+                                                    <span class="btn-text d-flex flex-column align-items-center justify-content-center transition">Submit Review</span>
+                                                    <span class="btn-icon d-flex flex-column align-items-center justify-content-center transition"><img src="assets/img/icons/right-arrow.svg" alt="Icon"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Details End -->
+
+
+                <!-- Related product Section Start -->
+                <div class="container pb-85">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card style-one text-center mb-30">
+                                <div class="product-img d-flex flex-column align-items-center justify-content-center position-relative z-1 overflow-hidden round-20 mb-22">
+                                    <img src="assets/img/products/product-1.png" alt="Image" class="d-block mx-auto transition">
+                                    <button class="add-to-cart position-absolute border-0 d-flex flex-column align-items-center justify-content-center rounded-circle fs-18 transition">
+                                       <i class="ri-shopping-cart-line"></i>
+                                    </button>
+                                </div>
+                                <div class="rating d-flex flex-wrap align-items-center justify-content-center text_secondary mb-6 fs-24">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="fs-24 fw-semibold mb-8"><a href="shop-details.html" class="text-title link-hover-secondary transition">The mind rewired</a></h3>
+                                <p class="product-price fs-20 fw-semibold text-title mb-0"><del class="fs-16 fw-normal text-para me-2">$55.00</del>$50.00</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card style-one text-center mb-30">
+                                <div class="product-img d-flex flex-column align-items-center justify-content-center position-relative z-1 overflow-hidden round-20 mb-22">
+                                    <img src="assets/img/products/product-2.png" alt="Image" class="d-block mx-auto transition">
+                                     <button class="add-to-cart position-absolute border-0 d-flex flex-column align-items-center justify-content-center rounded-circle fs-18 transition">
+                                       <i class="ri-shopping-cart-line"></i>
+                                    </button>
+                                </div>
+                                <div class="rating d-flex flex-wrap align-items-center justify-content-center text_secondary mb-6 fs-24">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="fs-24 fw-semibold mb-8"><a href="shop-details.html" class="text-title link-hover-secondary transition">Echoes of the silent god</a></h3>
+                                <p class="product-price fs-20 fw-semibold text-title mb-0"><del class="fs-16 fw-normal text-para me-2">$85.00</del>$70.00</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-card style-one text-center mb-30">
+                                <div class="product-img d-flex flex-column align-items-center justify-content-center position-relative z-1 overflow-hidden round-20 mb-22">
+                                    <img src="assets/img/products/product-3.png" alt="Image" class="d-block mx-auto transition">
+                                    <button class="add-to-cart position-absolute border-0 d-flex flex-column align-items-center justify-content-center rounded-circle fs-18 transition">
+                                       <i class="ri-shopping-cart-line"></i>
+                                    </button>
+                                </div>
+                                <div class="rating d-flex flex-wrap align-items-center justify-content-center text_secondary mb-6 fs-24">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="fs-24 fw-semibold mb-8"><a href="shop-details.html" class="text-title link-hover-secondary transition">Dual realities</a></h3>
+                                <p class="product-price fs-20 fw-semibold text-title mb-0"><del class="fs-16 fw-normal text-para me-2">$35.00</del>$30.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Related product Section End -->
+
+                <!-- Footer Section Start -->
+                <footer class="footer-area style-three bg-title pt-115">
+                    <div class="container">
+                        <div class="row pb-85">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <a href="index.html" class="logo d-block mb-22">
+                                        <img src="assets/img/logo-white.png" alt="Logo">
+                                    </a>
+                                    <h3 class="fs-20 fw-semibold text_secondary">Newsletter</h3>
+                                    <p class="mb-18">Subscribe to our newsletter for the latest legal updates news</p>
+                                    <form action="#" class="newsletter-form style-two position-relative">
+                                        <input type="email" class="w-100 bg-transparent text-white outline-0" placeholder="Email address">
+                                        <button class="bg-transparent border-0 position-absolute text_secondary end-0"><i class="ri-send-plane-2-line"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 offset-xl-1 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <ul class="contact-info list-unstyled mb-0">
+                                        <li>
+                                            <span class="d-block mb-1 text-white">Call Us</span>
+                                            <a href="tel:15555078494" class="text_secondary fw-bold hover-text-primary transition">+1 (555) 507-8494</a>
+                                        </li>
+                                        <li>
+                                            <span class="d-block mb-1 text-white">Email Us</span>
+                                            <a href="mailto:info@olawx.com" class="text_secondary fw-semibold hover-text-primary transition">info@olawx.com</a>
+                                        </li>
+                                        <li>
+                                            <span class="d-block mb-1 text-white">Address</span>
+                                            <p class="mb-0 pe-xxl-5">753 Legal Avenue, Suite 159, NY 10101, New York, USA</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <h3 class="footer-widget-title fs-20 fw-semibold text_secondary mb-30">Practice
+                                        Areas</h3>
+                                    <ul class="footer-menu style-two list-unstyled mb-0">
+                                        <li><a href="practice-areas.html">Commercial Litigation</a>
+                                        <li><a href="practice-areas.html">Corporate Law</a>
+                                        <li><a href="practice-areas.html">Intellectual Property</a>
+                                        <li><a href="practice-areas.html">Family Law</a>
+                                        <li><a href="practice-areas.html">Real Estate Law</a>
+                                        <li><a href="practice-areas.html">Employment Law</a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <h3 class="footer-widget-title fs-20 fw-semibold text_secondary mb-30">Quick Links
+                                    </h3>
+                                    <ul class="footer-menu style-two list-unstyled mb-0">
+                                        <li><a href="index.html">Home</a>
+                                        <li><a href="about-us.html">About Us</a>
+                                        <li><a href="practice-areas.html">Case Studies</a>
+                                        <li><a href="privacy-policy.html">Privacy Policy</a>
+                                        <li><a href="terms-conditions.html">Terms & Conditions</a>
+                                        <li><a href="contact.html">Contact Us</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="row align-items-center">
+                                <div class="col-md-7 pe-md-0 mb-sm-10">
+                                    <p class="copyright-text text-offwhite text-md-start text-center mb-0"><i class="ri-copyright-line"></i><span class="text-white fw-semibold ms-1 me-1">Olawx</span> Is Proudly Owned By <a href="https://envytheme.com/" target="_blank" class="text_secondary fw-semibold link-hover-secondary transition">EnvyTheme</a>
+                                    </p>
+                                </div>
+                                <div class="col-md-5 text-md-end text-center">
+                                    <ul class="social-profile style-two list-unstyled mb-0">
+                                        <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-facebook-fill"></i></a></li>
+                                        <li><a href="https://x.com/?lang=en" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-twitter-x-line"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-linkedin-fill"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-instagram-line"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+
+            </div>
+        </div>
+            <!-- Back to Top -->
+            <div id="progress-wrap" class="progress-wrap style-one">
+                <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                    <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+                </svg>
+            </div>
+            <!-- Link of JS files -->
+            <script src="assets/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/js/megamenu.js"></script>
+            <script src="assets/js/swiper-bundle.min.js"></script>
+            <script src="assets/js/fslightbox.js"></script>
+            <script src="assets/js/gsap.min.js"></script>
+            <script src="assets/js/scrollTrigger.min.js"></script>
+            <script src="assets/js/lenis.min.js"></script>
+            <script src="assets/js/scrollToPlugin.js"></script>
+            <script src="assets/js/SplitText.min.js"></script>
+            <script src="assets/js/customEase.js"></script>
+            <script src="assets/js/scrollcue.min.js"></script>
+            <script src="assets/js/main.js"></script>
+    </body>
+</html>
