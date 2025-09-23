@@ -150,5 +150,80 @@
 }
 
 /*---------------------------------
+   Dark  CSS
+----------------------------------*/
+.theme-dark{
+    .newsletter-form {
+        &.style-one {
+            input {
+                background-color: transparent;
+                border: 1px solid var(--borderColor);
+                &::placeholder {
+                    color: var(--whiteColor);
+                }
+            }
+        }
+        &.style-two {
+            input {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+    .footer-area {
+        &.style-two,
+        &.style-three {
+            .footer-bottom {
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+    .footer-widget {
+        .footer-menu {
+            &.style-one {
+                li {
+                    a {
+                        color: var(--offwhiteColor);
+                        &:after {
+                            background-color: var(--secondaryColor);
+                        }
+                        &:hover {
+                            color: var(--secondaryColor);
+                        }
+                    }
+                }
+            }
+            &.style-two {
+                li {
+                    a {
+                        color: var(--offwhiteColor);
+                        &:after {
+                            background-color: var(--secondaryColor);
+                        }
+                        &:hover {
+                            color: var(--secondaryColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*---------------------------------
    RTL CSS
 ----------------------------------*/
+@media only screen and (max-width: 991px) {
+    .rtl-enabled{
+        .footer-area{
+            .footer-bottom {
+                .footer-bottom-menu {
+                    li{
+                        margin-right: 0;
+                        margin-left: 9px;
+                        padding-right: 0;
+                        padding-left: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

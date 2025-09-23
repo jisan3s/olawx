@@ -118,7 +118,7 @@ body {
     color: var(--primaryColor) !important;
 }
 .text_secondary {
-    color: var(--secondaryColor);
+    color: var(--secondaryColor)!important;
 }
 .text-title {
     color: var(--titleColor);
@@ -967,7 +967,6 @@ Preloader Area CSS
     justify-content: center;
     border-radius: 10px 0 0 10px;
     transition: var(--transition);
-    display: none;
     &.open{
         right: 0;
     }
@@ -2597,7 +2596,7 @@ Pagination CSS
             border: none;
             padding: 0;
             margin-bottom: 34px;
-            border-radius: 20px;
+            border-radius: 0;
             .accordion-header {
                 .accordion-button {
                     color: var(--titleColor);
@@ -2659,7 +2658,6 @@ Pagination CSS
         }
     }
 }
-
 /*-------------------------------
         Team Section CSS
 -------------------------------*/
@@ -4723,9 +4721,6 @@ Pagination CSS
     }
 }
 
-
-
-
 /*---------------------------------
     Dark Section CSS
 ----------------------------------*/
@@ -4764,10 +4759,1423 @@ Pagination CSS
         background-color: #000;
         color: #E0E0E0;
     }
+    .link-hover-primary{
+        &:hover{
+            color: var(--secondaryColor)!important;
+        }
+    }
+    .bg-limed,
+    .bg_primary{
+        background-color: var(--aztechColor);    
+    }
+    .bg_white,
+    .bg-optional{
+        background-color: var(--codColor);
+    }
+    .bg-peach,
+    .bg-dawnPink{
+        background-color: var(--slateGrayColor);
+    }
     .text-para{
         color: var(--darkParaColor);
+    }
+    .section-title{
+        &.style-three{
+            &>span{
+                background-color: var(--primaryColor);
+            }
+        }
+    }
+    .page-nav {
+        li {
+            a {
+                border: 1px solid var(--borderColor);
+                background-color:transparent;
+                color: var(--whiteColor);
+                i {
+                    color: var(--whiteColor);
+                }
+                img{
+                    filter: brightness(0) invert(1);
+                }
+                &.active,
+                &:hover {
+                    background-color: var(--secondaryColor);
+                    color: var(--whiteColor);
+                    i {
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
     }
     .text-title,h1,h2,h3,h4,h5,h6{
         color: var(--whiteColor);
     }
+    .btn {
+        &.style-one{
+            background-color: var(--primaryColor);
+            span{
+                &.btn-text{
+                    color: var(--whiteColor);
+                }
+                &.btn-icon{
+                    color: var(--primaryColor);
+                    img{
+                        filter: brightness(0) invert(1);
+                    }
+                    i{
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+            .btn-icon{
+                background-color: var(--charcoalColor);
+            }
+            &:hover{
+                span{
+                    &.btn-icon{
+                        background-color: var(--secondaryColor);
+                        color: var(--whiteColor);
+                        img{
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                }
+            }
+        }
+        &.style-two{
+            background-color: var(--slateGrayColor);
+            border: 1px solid transparent;
+            span{
+                &.btn-text{
+                    color: var(--whiteColor);
+                }
+                &.btn-icon{
+                    color: var(--whiteColor);
+                    img{
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+            .btn-icon{
+                background-color: var(--primaryColor);
+            }
+            &:hover{
+                background-color: var(--primaryColor);
+                border-color: rgba(255,255,255,0.2);
+                span{
+                    &.btn-text{
+                        color: var(--whiteColor);
+                    }
+                    &.btn-icon{
+                        background-color: var(--whiteColor);
+                        color: var(--primaryColor);
+                        img{
+                            filter: brightness(1) invert(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .link {
+        &.style-one {
+            color: var(--whiteColor);
+            &:after {
+                background-color: var(--secondaryColor);
+            }
+            &:hover {
+                color: var(--secondaryColor);
+            }
+        }
+        &.style-two {
+            color: var(--offwhiteColor);
+            &:after {
+                background-color: var(--titleColor);
+            }
+            &:hover {
+                color: var(--titleColor);
+            }
+        }
+        &.style-three {
+            color: var(--secondaryColor);
+            &:after {
+                background-color: var(--secondaryColor);
+            }
+        }
+        &.style-four {
+            color: var(--whiteColor);
+            &:after {
+                background-color: var(--primaryColor);
+            }
+            &:hover {
+                color: var(--primaryColor);
+            }
+        }
+        &.style-five {
+            color: var(--whiteColor);
+            &:after {
+                background-color: var(--secondaryColor);
+            }
+            &:hover {
+                color: var(--secondaryColor);
+            }
+        }
+    }
+    /*-------------------------------
+            About Section CSS
+    -------------------------------*/
+    .video-wrapper {
+        .video-quote {
+            background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+            p {
+                color: var(--whiteColor);
+            }
+        }
+    }
+    .feature-list {
+        &.style-two {
+            li {
+                &:before {
+                    background-color: var(--darkParaColor);
+                }
+            }
+        }
+    }
+    .feature-card{
+        &.style-one{
+            img{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    /*-------------------------------
+            Why Choose CSS
+    -------------------------------*/
+    .wh-area {
+        &.style-two {
+            background: linear-gradient(270deg, #271F1B 0%, #181D20 100%);
+        }
+    }
+    .wh-card {
+        &.style-two {
+            background-color: var(--aztechColor);
+        }
+    }
+    /*-------------------------------
+            Practice Area CSS
+    -------------------------------*/
+    .practice-card {
+        .practice-features {
+            li {
+                &:before {
+                    background-color: var(--borderColor);
+                }
+            }
+        }
+        &.style-one {
+            &.bg-white{
+                background-color: var(--aztechColor)!important;
+            }
+            .practice-info {
+                ul {
+                    li {
+                        &:before {
+                            color: var(--whiteColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .practice-tablist {
+        border-bottom: none;
+        .nav-item {
+            .nav-link {
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+                .practice-icon {
+                    background-color: var(--codColor);
+                }
+                .practice-text {
+                    color: var(--whiteColor);
+                }
+                &.active {
+                    border-bottom: 1px solid rgba(250.5,250.5,250.5,1);
+                    .practice-icon {
+                        background-color: var(--primaryColor);
+                    }
+                }
+            }
+            &:last-child{
+                .nav-link{
+                    border-bottom: 1px solid rgba(0,0,0,0.2);
+                }
+            }
+        }
+    }
+    .practice-card-wrap{
+        .practice-card{
+            border-color: rgba(255,255,255,0.2);
+        }
+    }
+    /*-------------------------------
+            FAQ Section CSS
+    -------------------------------*/
+    .accordion {
+        &.style-one {
+            .accordion-item {
+                background-color: var(--charcoalColor);
+                .accordion-header {
+                    .accordion-button {
+                        color: var(--whiteColor);
+                        .accord-arrow {
+                            background-color: var(--primaryColor);
+                            i {
+                                color: var(--whiteColor);
+                            }
+                        }
+                    }
+                }
+                .accordion-body {
+                    border-top: 1px solid rgba(255,255,255,0.1);
+                }
+            }
+        }
+        &.style-three {
+            .accordion-item {
+                .accordion-header {
+                    .accordion-button {
+                        color: var(--whiteColor);
+                        .accord-arrow {
+                            background-color: var(--primaryColor);
+                            i {
+                                color: var(--whiteColor);
+                            }
+                        }
+                    }
+                }
+                .accordion-body {
+                    border-top: 1px solid var(--borderColor);
+                }
+                &.collapsed {
+                    border-bottom: 1px solid var(--borderColor);
+                }
+            }
+        }
+    }
+    .brand-partner,
+    .brand-logo{
+        img{
+            filter: brightness(0) invert(0.6);
+        }
+    }
+    /*-------------------------------
+            Team Section CSS
+    -------------------------------*/
+    .team-area {
+        &.style-one {
+            .team-area-bg {
+                &:after {
+                    background: linear-gradient(-89.88deg, rgba(10, 10, 10, 0) 49.98%, rgba(10, 10, 10, 0.8) 99.88%);
+                }
+            }
+        }
+    }
+    .team-card {
+        &.style-one,
+        &.style-two {
+            .team-img {
+                .social-link {
+                    background-color: var(--slateGrayColor);
+                    color: var(--whiteColor);
+                    &:hover {
+                        background-color: var(--primaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+    .attorney-card-wrap {
+        .attorney-card {
+            .attorney-info {
+                background-color: var(--charcoalColor);
+                .social-link {
+                    background-color: var(--charcoalColor);
+                    color: var(--whiteColor);
+                    &:hover {
+                        background-color: var(--secondaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+    .team-details-content {
+        blockquote {
+            p {
+                background-color: var(--aztechColor);
+            }
+        }
+        .counter-card-wrap {
+            .counter-card {
+                &:after {
+                    border-right: 1px dashed var(--borderColor);
+                }
+            }
+        }
+    }
+    .funfact-area {
+        &:after {
+            background-color: var(--slateGrayColor);
+        }
+    }
+    .counter-card-wrap {
+        &.style-two {
+            .counter-card {
+                border-right: 1px dashed rgba(255,255,255,0.2);
+                &:last-child{
+                    border-right: none;
+                }
+            }
+        }
+        &.style-three {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+    /*-------------------------------
+            Brand Section CSS
+    -------------------------------*/
+    .brand-area {
+        border: 1px solid var(--borderColor);
+    }
+
+    /*-------------------------------
+        Testimonial Section CSS
+    -------------------------------*/
+    .testimonial-card {
+        &.style-two {
+            .client-quote {
+                .client-info-wrap {
+                    .client-info {
+                        &:before {
+                            background-color: var(--secondaryColor);
+                        }
+                    }
+                    .quote-icon {
+                        i {
+                            color: rgba(255, 255, 255, 0.2);
+                        }
+                    }
+                }
+            }
+        }
+        &.style-three {
+            & > i {
+                color: var(--slateGrayColor);
+            }
+        }
+    }
+
+    .testimonial-slider {
+        &.style-one,
+        &.style-three {
+            .testimonial-pagination {
+                border: 1px solid var(--borderColor);
+                .swiper-pagination-bullet {
+                    &:after {
+                        background-color: var(--primaryColor);
+                    }
+                    &.swiper-pagination-bullet-active {
+                        background-color: var(--secondaryColor);
+                    }
+                }
+            }
+        }
+        &.style-two {
+            .testimonial-pagination {
+                border: 1px dashed var(--borderColor);
+                .swiper-pagination-bullet {
+                    &:after {
+                        background-color: var(--charcoalColor);
+                    }
+                    &.swiper-pagination-bullet-active {
+                        background-color: var(--secondaryColor);
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonial-pagination {
+        .swiper-pagination-bullet {
+            background-color: transparent;
+        }
+    }
+    /*-------------------------------
+            Promo Area CSS
+    -------------------------------*/
+    .promo-area{
+        &.style-one{
+            &:after{
+                background: linear-gradient(270deg, #271F1B 0%, #181D20 100%);
+            }
+        }
+        &.style-two{
+            .promo-box{
+                background-color: var(--charcoalColor);
+                border: 1px dashed var(--borderColor);
+                .promo-card{
+                    border-right: 1px dashed var(--borderColor);
+                }
+            }
+        }
+    }
+
+    /*-----------------------
+        Case Study CSS
+    -------------------------*/
+    .case-slider-wrap{
+        &:after{
+            border-left: 1px dashed var(--secondaryColor);
+        }
+        .case-pagination{
+            .swiper-pagination-bullet{
+                color: var(--whiteColor);
+                background-color: var(--codColor);
+                border: 1px dashed var(--borderColor);
+                &.swiper-pagination-bullet-active{
+                    background-color: var(--secondaryColor);
+                    color: var(--whiteColor);
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+    .case-card{
+        &.style-one{
+            &:after{
+                background: linear-gradient(180deg, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, 0.8) 100%);
+            }
+            .case-info{
+                .case-link{
+                    background-color: var(--charcoalColor);
+                    i{
+                        color: var(--whiteColor);
+                    }
+                    &:hover{
+                        background-color: var(--primaryColor);
+                        i{
+                            color: var(--whiteColor);
+                        }
+                    }
+                }
+            }
+        }
+        &.style-two{
+            &:after{
+                background: linear-gradient(180deg, rgba(10, 10, 10, 0) 50%, #0A0A0A 100%);
+            }
+            .case-link{
+                background-color: var(--whiteColor);
+                i{
+                    color: var(--offwhiteColor);
+                }
+                &:hover{
+                    background-color: var(--primaryColor);
+                    i{
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+        &.style-three{
+            .case-info{
+                background: rgba(10, 10, 10, 0.1);
+            }
+        }
+    }
+
+    /*-------------------------------
+            Service CSS
+    -------------------------------*/
+    .service-bg{
+        &.style-one,
+        &.style-two{
+            .contact-info{
+                background: var(--slateGrayColor);;
+            }
+        }
+    }
+    .service-list{
+        a{
+            color: var(--whiteColor);
+            border-bottom: 1px solid var(--borderColor);
+            span{
+                color: var(--whiteColor);
+            }
+            img{
+                filter: brightness(0) invert(1);
+            }
+            i{
+                color: var(--whiteColor);
+            }
+            &.active,
+            &:hover{
+                color: var(--whiteColor);
+                border-color: var(--borderColor);
+            }
+        }
+    }
+
+    /*-------------------------------
+            Work Process Section CSS
+    -------------------------------*/
+    .process-card{
+        &.style-one,
+        &.style-three{
+            img{
+                filter: brightness(0) invert(1);
+            }
+        }
+        &.style-three{
+            background-color: var(--aztechColor)!important; 
+        }
+    }
+   .case-pagination-wrap{
+        &:before,
+        &:after{
+            background-color: var(--borderColor);
+        }
+        .prev-btn,
+        .next-btn{
+            background-color: var(--primaryColor);
+            &:hover{
+                background-color: var(--secondaryColor);
+            }
+        }
+        .case-pagination{
+            .swiper-pagination-current{
+                color: var(--whiteColor);
+            }
+            .swiper-pagination-total{
+                color: var(--offwhiteColor);
+            }
+        }
+    }
+    /*-------------------------------
+            Contact Section CSS
+    -------------------------------*/
+    .form-wrapper{
+        &.style-one{
+            input,select,textarea{
+                background-color: #5F4841;
+            }
+        }
+        &.style-two{
+            input,select,textarea{
+                background-color: var(--aztechColor);
+                border: 1px solid var(--borderColor);;
+            }
+            .file-upload{
+                background-color: var(--aztechColor);
+            }
+        }
+        &.style-three{
+            input,select,textarea{
+                background-color: var(--aztechColor);
+                border: 1px solid var(--borderColor);;
+            }
+        }
+    }
+    .faq-contact-box{
+        background-color: #5F4841;
+        &:after{
+            border-left: 1px dashed rgba(255,255,255,0.1);
+        }
+    }
+    .contact-area{
+        &.style-one{
+            .contact-bg{
+                &:after{
+                    background: linear-gradient(180deg, rgba(10, 10, 10, 0) 50%, #0A0A0A 100%);
+                }
+            }
+        }
+    }
+    .checkbox{
+        &.style-one{
+            label{
+                &:before{
+                    background-color: var(--charcoalColor);
+                    border: 1px solid var(--borderColor);
+                }
+            }
+        }
+        &.style-two{
+            label{
+                &:before{
+                    background-color: var(--codColor);
+                    border: 1px solid var(--borderColor);
+                }
+            }
+        }
+    }
+    .checkbox.style-one input:checked+label:before,
+    .checkbox.style-two input:checked+label:before{
+        border-color: transparent;
+    }
+    .checkbox.style-one input:checked+label:after,
+    .checkbox.style-two input:checked+label:after {
+        background: var(--secondaryColor);
+    }
+
+    /*-------------------------------
+            Pricing Section CSS
+    -------------------------------*/
+    .pricing-slider{
+        background-color: var(--primaryColor);
+        &:before{
+            background-color: var(--secondaryColor);
+        }
+    }
+    .payment-fee-card{
+        background-color: var(--codColor);
+        .feature-list{
+            background-color: var(--slateGrayColor);
+        }
+    }
+    
+    /*-------------------------------
+            Career Card CSS
+    -------------------------------*/
+    .feature-box{
+        .feature-counter{
+            background-color: var(--slateGrayColor);;
+        }
+    }
+
+    /*-------------------------------
+            Blog Section CSS
+    -------------------------------*/
+    .blog-card{
+        &.style-one{
+            .blog-info{
+                .blog-metainfo{
+                    li{
+                        a{
+                            color: var(--secondaryColor);
+                            &:hover{
+                                color: var(--whiteColor);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.style-two{
+            .blog-info{
+                .blog-metainfo{
+                    li{
+                        a{
+                            color: var(--secondaryColor);
+                            &:hover{
+                                color: var(--whiteColor);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.style-three{
+            h3 {
+                border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+            }
+        }
+        .blog-date{
+            &:hover{
+                background-color: var(--primaryColor);
+                color: var(--whiteColor);
+                span{
+                    color: var(--whiteColor);
+                }
+            }
+        }
+    }
+    .blog-metainfo{
+        &.style-two{
+            background-color: var(--slateGrayColor);
+        }
+    }
+    .blog-category{
+        &:hover{
+            background-color: var(--charcoalColor);
+        }
+    }
+    .post-metaoption {
+        border-top: 1px solid var(--borderColor);
+        border-bottom: 1px solid var(--borderColor);
+    }
+    .v-counter{
+        background-color: transparent;
+        border: 1px solid var(--borderColor);
+        input{
+            background-color: transparent;
+            border-right:1px solid var(--borderColor);
+            color: var(--whiteColor);
+        }
+        .minusBtn{
+            bottom: 0;
+            border-top:1px solid var(--borderColor)!important;
+            &:before{
+                color: var(--whiteColor);
+            }
+        }
+        .plusBtn{
+            &:before{
+                color: var(--whiteColor);
+            }
+        }
+    }
+    .product-tablist{
+        border-bottom-color: rgba(255,255,255,0.1);
+        .nav-item{
+            .nav-link{
+                color: var(--whiteColor);
+            }
+        }
+    }
+    /*-------------------------------
+        Sidebar Widget CSS 
+    -------------------------------*/
+    .sidebar{
+        .sidebar-widget{
+            background-color: var(--aztechColor);
+        }
+    }
+    .search-widget{
+        input{
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: transparent;
+        }
+    }
+    .category-widget{
+        ul{
+            li{
+                a{
+                    background-color: var(--slateGrayColor);
+                    border: 1px solid var(--borderColor);
+                    color: var(--whiteColor);
+                    &:hover{
+                        background-color: var(--secondaryColor);
+                        color: var(--whiteColor);
+                        border-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+    .rp-post-card{
+        &.style-two{
+            .rp-post-img{
+                background-color: var(--whiteColor);
+            }
+        }
+    }
+    .tags-widget{
+        ul{
+            li a{
+                background-color: var(--charcoalColor);
+                border: 1px solid var(--borderColor);
+                &:hover{
+                    background-color: var(--secondaryColor);
+                    color: var(--whiteColor);
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+    .taglist{
+        li a{
+            background-color: var(--charcoalColor);
+            border: 1px solid var(--borderColor);
+            &:hover{
+                background-color: var(--primaryColor);
+                color: var(--whiteColor);
+                border-color: transparent;
+            }
+        }
+    }
+    .contact-info-box{
+        background-color: var(--aztechColor);
+    }
+    /*-------------------------------
+         Cart CSS
+    -------------------------------*/
+    .cart-table{
+        table{
+            thead{
+                tr{
+                    th{
+                        color: var(--whiteColor);
+                        background-color: var(--slateGrayColor);
+                    }
+                }
+            }   
+            tbody{
+                tr{
+                    td{
+                        border-bottom: 1px solid var(--borderColor);
+                        .cart-product{
+                            .product-img{
+                                background-color: #F4ECE6;
+                            }
+                        }
+                        .cart-action{
+                            i{
+                                color: #FF3B12;
+                            }
+                        }
+                    }
+                }    
+            }
+        }
+    }
+    .coupon-code{
+        input{
+            background-color: transparent;
+            &::placeholder{
+                color: var(--whiteColor);
+            }
+        }
+    }
+    .cart-total{
+        background-color: var(--aztechColor);
+    }
+    .cart-total-wrap{
+        .cart-total-item{
+            border-bottom: 1px solid var(--borderColor);
+        }
+    }
+    /*-------------------------------
+        Checkout CSS
+    -------------------------------*/
+    .promo-login{
+        background-color: var(--aztechColor);
+        box-shadow: none;
+    }
+    /*-------------------------------
+        Appointment CSS
+    -------------------------------*/
+    .radio-btn{
+        label{
+            span{
+                color: var(--whiteColor);
+                &.icon{
+                    background-color: var(--secondaryColor);
+                    i{
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+        [type="radio"]:checked + label,
+        [type="radio"]:not(:checked) + label
+        {
+            color: #ddd;
+        }
+        [type="radio"]:checked + label:before,
+        [type="radio"]:not(:checked) + label:before {
+            background: #fff;
+        }
+        [type="radio"]:checked + label:after,
+        [type="radio"]:not(:checked) + label:after {
+            background: var(--secondaryColor);
+        }
+        [type="radio"]:checked + label span.icon{
+            background-color: var(--whiteColor);
+        }
+    }
+}
+
+/*---------------------------------
+    RTL Section CSS
+----------------------------------*/
+.rtl-enabled{
+    .theme-switcher{
+        right: auto;
+        left: -160px;
+        border-radius: 0 10px 10px 0;
+        border-right: 1px solid rgba(0,0,0,0.2);
+        border-left: none;
+        &.open{
+            right: auto;
+            left: 0;
+        }
+        .switch-box{
+            border-radius: 0 10px 10px 0;
+        }
+    }
+    .toggle-switch-btn{
+        border-radius:0 5px 5px 0;
+        left: auto;
+        right: -50px;
+    }
+    .switch-theme-mode {
+        left:auto;
+        right: 40px;
+    }
+    .rtl-switch{
+        left: auto;
+        right: 40px;
+        small{
+            &.rtl{
+                right: auto;
+                left: -35px;
+            }
+        }
+    }
+    .rtl-switch,
+    .switch {
+        small{
+            &.left,
+            &.ltr{
+                margin-left: 0;
+                margin-right: -40px;
+            }
+            &.right{
+                margin-left: 0;
+                margin-right: 60px;
+            }
+        }
+        .slider {
+            &.round{
+                &:before{
+                    left: auto;
+                    right: 3px;
+                }
+            }
+        }
+        input:checked + .slider:before {
+            -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+        }
+    }
+    /*-------------------------------
+        Hero Section CSS
+    -------------------------------*/
+    .hero-area{
+        &.style-one{
+            .hero-content{
+                .btn-wrap{
+                    .btn{
+                        margin-left: 25px;
+                        margin-right: 0;
+                    }
+                }
+            }
+            .social-profile-wrap{
+                .circle-text-wrap{
+                    .fav-icon{
+                        right: 22%!important;
+                    }
+                }
+            }
+        }
+        &.style-two{
+            .hero-shape{
+                left: auto;
+                right: 5%;
+            }
+            .btn-wrap{
+                .btn{
+                    margin-right: 0;
+                    margin-left: 25px;
+                }
+            }
+            .circle-text-wrap{
+                margin-left: 0;
+                margin-right: auto;
+                &:before{
+                    left: auto;
+                    right: 50%;
+                }
+            }
+            .hero-para{
+                p{
+                    margin-right: 0;
+                }
+            }
+        }
+        &.style-three{
+            .hero-slide-item{
+                .hero-content{
+                    .circle-text-wrap{
+                        margin-right: auto;
+                        margin-left: 0;
+                    }
+                }
+                .counter-card{
+                    h4{
+                        margin-right: 0;
+                        margin-left: 12px;
+                    }
+                }
+                .hero-para{
+                    margin-left: 0;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+
+    /*-------------------------------
+            About Section CSS
+    -------------------------------*/
+    .about-area{
+        &.style-one{
+            .about-content{
+                .client-list{
+                    margin-left: 0;
+                    margin-right: 20px;
+                    li{
+                        margin-left: 0;
+                        margin-right: -20px;
+                    }
+                }
+            }
+        }
+        &.style-three{
+            .about-content{
+                ul{
+                    li{
+                        padding-left: 0;
+                        padding-right: 20px;
+                        i{
+                            left: auto;
+                            right: 0;
+                        }
+                    }
+                }    
+            }
+        }
+    }
+    .feature-list{
+        &.style-one{
+            li{
+                padding-left:0;
+                padding-right: 32px;
+                i{
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+        &.style-two{
+            li{
+                padding-left: 0;
+                padding-right: 22px;
+                &:before{
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
+    @-webkit-keyframes mymove {
+        from {
+        right: 0;
+        left: auto;
+        }
+        to {
+        right: -100%;
+        left: auto;
+        }
+    }
+    @keyframes mymove {
+        from {
+            right: 0;
+            left: auto;
+        }
+        to {
+            right: -100%;
+            left: auto;
+        }
+    }
+    .move-text-wrapper{
+        .move-text {
+            &.style-one {
+                left: auto;
+                right: 0;
+                li {
+                    margin-right: 0;
+                    margin-left: 0;
+                    padding-left: 54px;
+                    padding-right: 0;
+                    &:after{
+                        right: auto;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .move-text{
+        &.style-two{
+            ul{
+                left: auto;
+                right: 0;
+                li{
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    /*-------------------------------
+            FAQ Section CSS
+    -------------------------------*/
+    .faq-area{
+        &.style-one{
+            .faq-bg-wrap{
+                .faq-contact-box{
+                    left: auto;
+                    right: 30px;
+                    padding-left: 0;
+                    padding-right: 30px;
+                    right: auto;
+                    left: 0;
+                }
+            }
+        }
+    }
+    .accordion {
+        &.style-one,
+        &.style-two,
+        &.style-three {
+            .accordion-item {
+                margin-left: 0;
+                padding-left: 0;
+                padding-right: 30px;
+                .accordion-header {
+                    .accordion-button {
+                        padding-right: 0;
+                        padding-left: 0;
+                        .accord-arrow {
+                            right: auto;
+                            left: 29px;
+                            i{
+                                left: auto;
+                                right: 51%;
+                            }
+                        }
+                    }
+                }
+                .accordion-body {
+                    padding-right: 0;
+                }
+            }
+        }
+        &.style-one{
+            .accordion-item{
+                .accordion-header {
+                    .accordion-button {
+                        padding-left: 0;
+                        padding-right: 20px;
+                        .accord-arrow {
+                            right: auto;
+                            left: 20px;
+                        }
+                    }
+                }
+                .accordion-body {
+                    padding-left: 0;
+                    padding-right: 20px;
+                }
+            }
+        }
+        &.style-three{
+            .accordion-item{
+                .accordion-header {
+                    .accordion-button {
+                        padding-left: 0;
+                        .accord-arrow {
+                            right: auto;
+                            left: 0;
+                        }
+                    }
+                }
+                .accordion-body {
+                    padding-left: 0;
+                    padding-right: 36px;
+                }
+            }
+        }
+    }
+    .error-wrap {
+        .error-content{
+            right: auto;
+            left: 0;
+        }
+    }
+
+    /*-------------------------------
+            Team Section CSS
+    -------------------------------*/
+    .team-area{
+        &.style-one{
+            .team-area-bg{
+                right: 50%;
+                left: auto;
+            }
+        }
+    }
+    .attorney-card-wrap{
+        .attorney-card{
+            .attorney-info{
+                padding-left: 0;
+                padding-right: 20px;
+            }
+        }
+    }
+    .single-team-info{
+        .contact-info{
+            right:0;
+            left:auto;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    .team-details-content{
+        .counter-card-wrap{
+            .counter-card{
+                &:after{
+                    right: auto;
+                    left: 0;
+                }
+            }
+        }
+    }
+    .funfact-area{
+        &:after{
+            left: auto;
+            right: 0;
+        }
+    }
+    .counter-card-wrap{
+        &.style-two{
+            .counter-card{
+                border-right: none;
+                border-left: 1px dashed rgba(255,255,255,0.2);
+            }
+        }
+        &.style-three{
+            .counter-card{
+                margin-right: 0;
+                margin-left: 12px;
+            }
+        }
+    }
+
+    /*-------------------------------
+            Brand Section CSS
+    -------------------------------*/
+    .brand-area{
+        border-left: 1px solid #EBE5DF;
+        border-right: 1px solid #EBE5DF;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .brand-partner{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    /*-------------------------------
+        Testimonial Section CSS
+    -------------------------------*/
+    .testimonial-card{
+        &.style-one{
+            .client-quote{
+                margin-left: 0;
+                margin-right: auto;
+                .client-info-wrap {
+                    .client-info{
+                        margin-left: 0;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .testimonial-bg{
+        .move-text{
+            left: auto;
+            right: 0;
+        }
+    }
+    .testimonial-slider{
+        &.style-three{
+            .testimonial-pagination{
+                right: auto;
+                left: 0;
+            }
+        }
+    }
+    .case-slider-wrap{
+        &:after{
+            left: auto;
+            right: 25px;
+            border-left:none;
+            border-right: 1px dashed var(--primaryColor);
+        }
+        .case-slider-one{
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+    .case-card{
+        &.style-one{
+            .case-counter{
+                right: 45px;
+                left: auto;
+            }
+        }
+        &.style-two{
+            .case-link{
+                right: auto;
+                left: 50px;
+            }
+            .case-info{
+                ul{
+                    li{
+                        margin-right: 0;
+                        margin-left: 30px;
+                        span{
+                            margin-left: 0;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+            }
+        }
+        &.style-three{
+            .case-info{
+                padding-right: 20px;
+                padding-left: 22px;
+            }
+        }
+    }
+    .case-pagination-wrap{
+        &:before{
+            left: auto;
+            right: 80px;
+        }
+        &:after{
+            right: auto;
+            left: 80px;
+        }
+    }
+
 }

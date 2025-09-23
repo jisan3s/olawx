@@ -542,25 +542,25 @@
     });
 
     //Title Animation With SplitText 
-    // let splitTitleLines = gsap.utils.toArray(".title-anim");
+    let splitTitleLines = gsap.utils.toArray(".title-anim");
 
-    // splitTitleLines.forEach(splitTextLine => {
-    //     const tl = gsap.timeline({
-    //         scrollTrigger: {
-    //         trigger: splitTextLine,
-    //         start: 'top 90%',
-    //         end: 'bottom 60%',
-    //         scrub: false,
-    //         markers: false,
-    //         toggleActions: 'play none none none'
-    //     }
-    // });
+    splitTitleLines.forEach(splitTextLine => {
+        const tl = gsap.timeline({
+            scrollTrigger: {
+            trigger: splitTextLine,
+            start: 'top 90%',
+            end: 'bottom 60%',
+            scrub: false,
+            markers: false,
+            toggleActions: 'play none none none'
+        }
+    });
 
-    // const itemSplitted = new SplitText(splitTextLine, { type: "words, lines" });
-    // gsap.set(splitTextLine, { perspective: 400 });
-    // itemSplitted.split({ type: "lines" })
-    // tl.from(itemSplitted.lines, { duration: 1, delay: 0.3, opacity: 0, rotationX: -90, force3D: true, transformOrigin: "top center -50", stagger: 0.1 });
-    // });
+    const itemSplitted = new SplitText(splitTextLine, { type: "words, lines" });
+    gsap.set(splitTextLine, { perspective: 400 });
+    itemSplitted.split({ type: "lines" })
+    tl.from(itemSplitted.lines, { duration: 1, delay: 0.3, opacity: 0, rotationX: -90, force3D: true, transformOrigin: "top center -50", stagger: 0.1 });
+    });
     
     /*------------------------------------------------
             GSAP Image Tilt Effect
@@ -597,35 +597,35 @@
     /*------------------------------------------------
             GSAP Parallax Image With Lenis
     ------------------------------------------------*/
-    // const lenis = new Lenis({
-    //     lerp: 0.09
-    // });
+    const lenis = new Lenis({
+        lerp: 0.09
+    });
 
-    // lenis.on('scroll', ScrollTrigger.update);
+    lenis.on('scroll', ScrollTrigger.update);
 
-    //     gsap.ticker.add((time)=>{
-    //     lenis.raf(time * 1000)
-    // })
+        gsap.ticker.add((time)=>{
+        lenis.raf(time * 1000)
+    })
 
-    // gsap.utils.toArray('.img-container').forEach(container => {
-    // const img = container.querySelector('img');
+    gsap.utils.toArray('.img-container').forEach(container => {
+    const img = container.querySelector('img');
 
-    // const tl = gsap.timeline({
-    //     scrollTrigger: {
-    //     trigger: container,
-    //     scrub: true,
-    //     pin: false,
-    //     }
-    // });
+    const tl = gsap.timeline({
+        scrollTrigger: {
+        trigger: container,
+        scrub: true,
+        pin: false,
+        }
+    });
 
-    // tl.fromTo(img, {
-    //     yPercent: -20,
-    //     ease: 'none'
-    //     }, {
-    //         yPercent: 20,
-    //         ease: 'none'
-    //     });
-    // });
+    tl.fromTo(img, {
+        yPercent: -20,
+        ease: 'none'
+        }, {
+            yPercent: 20,
+            ease: 'none'
+        });
+    });
 
     // Grow Element on Scroll
     document.querySelectorAll(".grow-left").forEach((item) => {
@@ -952,7 +952,9 @@
 
 try {
 
-    // Toggle Switcher
+    /*------------------------------------------------
+                Toggle Switcher Js
+    ------------------------------------------------*/
     const themeswitcher = document.querySelector(".theme-switcher");
     document.querySelector(".toggle-switch-btn").addEventListener("click", function() {
         themeswitcher.classList.toggle("open");
@@ -961,60 +963,77 @@ try {
     //RTL Switcher
     document.addEventListener('DOMContentLoaded', () => {
         const toggle = document.getElementById('directionToggle');
+        const darkToggle = document.getElementById('darkModeToggle'); // Assume this exists
         const bootstrapLink = document.getElementById('bootstrapStylesheet');
         const html = document.documentElement;
         const body = document.body;
 
-        if (toggle && bootstrapLink && html && body) {
+        // Load stored settings or default
+        const isRTL = localStorage.getItem('isRTL') === 'true';
+        const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
+
+        function applyDirection(isRTL) {
+            const newHref = isRTL ? 'assets/css/bootstrap.rtl.min.css' : 'assets/css/bootstrap.min.css';
+            bootstrapLink.setAttribute('href', newHref);
+            html.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+            body.classList.toggle('rtl-enabled', isRTL);
+            body.classList.toggle('ltr-enabled', !isRTL);
+            if (toggle) toggle.checked = isRTL;
+        }
+
+        function applyDarkMode(isDark) {
+            body.classList.toggle('dark-mode', isDark);
+            if (darkToggle) darkToggle.checked = isDark;
+        }
+
+        // Apply stored settings
+        applyDirection(isRTL);
+        applyDarkMode(isDarkMode);
+
+        // RTL Toggle Handler
+        if (toggle) {
             toggle.addEventListener('change', function () {
                 const isRTL = this.checked;
-
-                // Toggle Bootstrap CSS
-                const newHref = isRTL ? 'assets/css/bootstrap.rtl.min.css' : 'assets/css/bootstrap.min.css';
-                bootstrapLink.setAttribute('href', newHref);
-
-                // Toggle HTML direction
-                html.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
-
-                // Toggle body classes
-                if (isRTL) {
-                    body.classList.remove('ltr-enabled');
-                    body.classList.add('rtl-enabled');
-                } else {
-                    body.classList.remove('rtl-enabled');
-                    body.classList.add('ltr-enabled');
-                }
+                localStorage.setItem('isRTL', isRTL);
+                applyDirection(isRTL);
             });
+        }
 
-            // Optional: Set initial direction on load (LTR by default)
-            body.classList.add('ltr-enabled');
-            html.setAttribute('dir', 'ltr');
-            bootstrapLink.setAttribute('href', 'assets/css/bootstrap.min.css');
+        // Dark Mode Toggle Handler
+        if (darkToggle) {
+            darkToggle.addEventListener('change', function () {
+                const isDark = this.checked;
+                localStorage.setItem('isDarkMode', isDark);
+                applyDarkMode(isDark);
+            });
         }
     });
-
 
     // function to set a given theme/color-scheme
     function setTheme(themeName) {
         localStorage.setItem('olawx_theme', themeName);
         document.documentElement.className = themeName;
     }
-    // function to toggle between light and dark theme
+
     function toggleTheme() {
-        if (localStorage.getItem('olawx_theme') === 'theme-dark') {
-            setTheme('theme-light');
-        } else {
+        const slider = document.getElementById('slider');
+        if (slider.checked) {
             setTheme('theme-dark');
+        } else {
+            setTheme('theme-light');
         }
     }
-    // Immediately invoked function to set the theme on initial load
+
     (function () {
-        if (localStorage.getItem('olawx_theme') === 'theme-dark') {
+        const slider = document.getElementById('slider');
+        const theme = localStorage.getItem('olawx_theme');
+
+        if (theme === 'theme-dark') {
             setTheme('theme-dark');
-            document.querySelector('.slider-btn').checked = false;
+            if (slider) slider.checked = true;
         } else {
             setTheme('theme-light');
-        document.querySelector('.slider-btn').checked = true;
+            if (slider) slider.checked = false;
         }
     })();
 

@@ -1,1 +1,503 @@
-/*# sourceMappingURL=dark.css.map */
+/*-------------------------------
+        Hero Section CSS
+-------------------------------*/
+.hero-area.style-one .social-wrapper:before, .hero-area.style-one .social-wrapper:after {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.hero-area.style-one .social-profile-wrap .social-profile li a .social-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.hero-area.style-one .social-profile-wrap .social-profile li a .social-icon i {
+  color: var(--secondaryColor);
+}
+.hero-area.style-one .social-profile-wrap .social-profile li a:hover i {
+  color: var(--whiteColor);
+}
+.hero-area.style-one .social-profile-wrap .circle-text-wrap {
+  background-color: rgba(10, 10, 10, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.hero-area.style-two .social-share .social-profile.style-two li a {
+  border: 1px dashed rgba(235, 229, 239, 0.2);
+}
+.hero-area.style-two .social-share .social-profile.style-two li a:hover {
+  border-color: transparent;
+}
+.hero-area.style-two .circle-text-wrap {
+  background-color: rgba(10, 10, 10, 0.5);
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+}
+.hero-area.style-two .circle-text-wrap:before {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.hero-area.style-three .hero-slide-item .hero-content .circle-text-wrap {
+  background-color: rgba(10, 10, 10, 0.5);
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+}
+.hero-area.style-three .hero-slide-item .counter-card p {
+  border-right: 1px dashed rgba(10, 10, 10, 0.2);
+}
+.hero-area.style-three .hero-thumbs .swiper-wrapper .hero-thumb-item {
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+.hero-area.style-three .hero-thumbs .swiper-wrapper .swiper-slide-thumb-active .hero-thumb-item {
+  border: 1px solid rgb(212, 175, 55);
+}
+
+/*-------------------------------
+        About Section CSS
+-------------------------------*/
+.about-area.style-one .about-content .client-list li {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.about-area.style-one .about-content .client-list li:last-child {
+  border: none;
+}
+.about-area.style-one .about-content .client-list li span {
+  background-color: var(--secondaryColor);
+}
+.about-area.style-one .about-content .client-list li span i {
+  color: var(--whiteColor);
+}
+
+.video-wrapper .video-quote {
+  background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.video-wrapper .video-quote p {
+  color: var(--whiteColor);
+}
+
+.feature-list.style-one li i {
+  color: var(--secondaryColor);
+}
+.feature-list.style-two li:before {
+  background-color: var(--paraColor);
+}
+
+/*-------------------------------
+        Why Choose CSS
+-------------------------------*/
+.wh-area.style-two {
+  background: linear-gradient(270deg, #271F1B 0%, #181D20 100%);
+}
+
+.wh-card.style-two {
+  background-color: #251F1C;
+  border: 1px dashed #624D46;
+}
+
+/*-------------------------------
+        Practice Area CSS
+-------------------------------*/
+.practice-card .practice-features li:before {
+  background-color: var(--paraColor);
+}
+.practice-card.style-one .practice-info ul li:before {
+  color: var(--paraColor);
+}
+
+.practice-tablist .nav-item .nav-link {
+  border-bottom: 1px solid rgba(95, 72, 65, 0.2);
+}
+.practice-tablist .nav-item .nav-link .practice-icon {
+  background-color: var(--whiteColor);
+}
+.practice-tablist .nav-item .nav-link .practice-text {
+  color: var(--titleColor);
+}
+.practice-tablist .nav-item .nav-link.active {
+  border-bottom: 1px solid rgb(95, 72, 65);
+}
+.practice-tablist .nav-item .nav-link.active .practice-icon {
+  background-color: var(--primaryColor);
+}
+
+/*-------------------------------
+        FAQ Section CSS
+-------------------------------*/
+.accordion.style-one .accordion-item {
+  background-color: var(--whiteColor);
+}
+.accordion.style-one .accordion-item .accordion-header .accordion-button {
+  color: var(--titleColor);
+}
+.accordion.style-one .accordion-item .accordion-header .accordion-button .accord-arrow {
+  background-color: var(--primaryColor);
+}
+.accordion.style-one .accordion-item .accordion-header .accordion-button .accord-arrow i {
+  color: var(--whiteColor);
+}
+.accordion.style-one .accordion-item .accordion-body {
+  border-top: 1px solid rgba(95, 72, 65, 0.1);
+}
+.accordion.style-three .accordion-item .accordion-header .accordion-button {
+  color: var(--titleColor);
+}
+.accordion.style-three .accordion-item .accordion-header .accordion-button .accord-arrow {
+  background-color: var(--primaryColor);
+}
+.accordion.style-three .accordion-item .accordion-header .accordion-button .accord-arrow i {
+  color: var(--whiteColor);
+}
+.accordion.style-three .accordion-item .accordion-body {
+  border-top: 1px solid rgba(95, 72, 65, 0.1);
+}
+.accordion.style-three .accordion-item.collapsed {
+  border-bottom: 1px solid #E6E0DA;
+}
+
+.error-wrap {
+  background-image: url(../img/error-bg.jpg);
+}
+.error-wrap .error-content {
+  background-color: rgba(1, 37, 44, 0.9);
+}
+.error-wrap .error-content h2 {
+  -webkit-text-stroke: 1px black var(--secondaryColor);
+}
+
+/*-------------------------------
+        Team Section CSS
+-------------------------------*/
+.team-area.style-one .team-area-bg:after {
+  background: linear-gradient(-89.88deg, rgba(10, 10, 10, 0) 49.98%, rgba(10, 10, 10, 0.8) 99.88%);
+}
+
+.team-card.style-one .team-img .social-link, .team-card.style-two .team-img .social-link {
+  background-color: var(--whiteColor);
+  color: var(--titleColor);
+}
+.team-card.style-one .team-img .social-link:hover, .team-card.style-two .team-img .social-link:hover {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+.attorney-card-wrap .attorney-card .attorney-info {
+  background-color: rgba(10, 10, 10, 0.1);
+  background: rgba(10, 10, 10, 0.1);
+}
+.attorney-card-wrap .attorney-card .attorney-info .social-link {
+  background-color: var(--whiteColor);
+  color: var(--titleColor);
+}
+.attorney-card-wrap .attorney-card .attorney-info .social-link:hover {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+.team-details-content blockquote p {
+  background-color: #F4ECE6;
+}
+.team-details-content .counter-card-wrap .counter-card:after {
+  border-right: 1px dashed rgba(10, 10, 10, 0.2);
+}
+
+.funfact-area:after {
+  background-color: #F4ECE6;
+}
+
+.counter-card-wrap.style-two .counter-card {
+  border-right: 1px dashed rgba(255, 255, 255, 0.2);
+}
+.counter-card-wrap.style-three {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/*-------------------------------
+        Brand Section CSS
+-------------------------------*/
+.brand-area {
+  border: 1px solid #EBE5DF;
+}
+
+/*-------------------------------
+    Testimonial Section CSS
+-------------------------------*/
+.testimonial-card.style-two .client-quote .client-info-wrap .client-info:before {
+  background-color: var(--secondaryColor);
+}
+.testimonial-card.style-two .client-quote .client-info-wrap .quote-icon i {
+  color: rgba(255, 255, 255, 0.1);
+}
+.testimonial-card.style-three > i {
+  color: var(--optionalColor);
+}
+
+.testimonial-slider.style-one .testimonial-pagination, .testimonial-slider.style-three .testimonial-pagination {
+  border: 1px solid rgba(95, 72, 65, 0.2);
+}
+.testimonial-slider.style-one .testimonial-pagination .swiper-pagination-bullet:after, .testimonial-slider.style-three .testimonial-pagination .swiper-pagination-bullet:after {
+  background-color: var(--primaryColor);
+}
+.testimonial-slider.style-one .testimonial-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active, .testimonial-slider.style-three .testimonial-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--secondaryColor);
+}
+.testimonial-slider.style-two .testimonial-pagination {
+  border: 1px dashed #536165;
+}
+.testimonial-slider.style-two .testimonial-pagination .swiper-pagination-bullet:after {
+  background-color: #536165;
+}
+.testimonial-slider.style-two .testimonial-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--secondaryColor);
+}
+
+.testimonial-pagination .swiper-pagination-bullet {
+  background-color: transparent;
+}
+
+/*-------------------------------
+        Promo Area CSS
+-------------------------------*/
+.promo-area.style-one:after {
+  background: linear-gradient(270deg, #271F1B 0%, #181D20 100%);
+}
+.promo-area.style-two .promo-box {
+  background-color: #251F1C;
+  border: 1px dashed #624D46;
+}
+.promo-area.style-two .promo-box .promo-card {
+  border-right: 1px dashed #624D46;
+}
+
+/*-----------------------
+    Case Study CSS
+-------------------------*/
+.case-slider-wrap:after {
+  border-left: 1px dashed var(--primaryColor);
+}
+.case-slider-wrap .case-pagination .swiper-pagination-bullet {
+  color: var(--primaryColor);
+  background-color: var(--linenColor);
+  border: 1px dashed var(--primaryColor);
+}
+.case-slider-wrap .case-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+  border-color: transparent;
+}
+
+.case-card.style-one:after {
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, 0.8) 100%);
+}
+.case-card.style-one .case-info .case-link {
+  background-color: var(--whiteColor);
+}
+.case-card.style-one .case-info .case-link i {
+  color: var(--primaryColor);
+}
+.case-card.style-one .case-info .case-link:hover {
+  background-color: var(--primaryColor);
+}
+.case-card.style-one .case-info .case-link:hover i {
+  color: var(--whiteColor);
+}
+.case-card.style-two:after {
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0) 50%, #0A0A0A 100%);
+}
+.case-card.style-two .case-link {
+  background-color: var(--whiteColor);
+}
+.case-card.style-two .case-link i {
+  color: var(--optionalColor);
+}
+.case-card.style-two .case-link:hover {
+  background-color: var(--primaryColor);
+}
+.case-card.style-two .case-link:hover i {
+  color: var(--whiteColor);
+}
+.case-card.style-three .case-info {
+  background: rgba(10, 10, 10, 0.1);
+}
+.case-card.style-three img {
+  border-radius: 20px;
+}
+
+/*-------------------------------
+        Service CSS
+-------------------------------*/
+.service-bg.style-one .contact-info, .service-bg.style-two .contact-info {
+  background: rgba(10, 10, 10, 0.1);
+}
+
+.service-list a {
+  color: #BCB9B4;
+  border-bottom: 1px solid #E6E0DA;
+}
+.service-list a span {
+  color: var(--titleColor);
+}
+.service-list a.active, .service-list a:hover {
+  color: var(--titleColor);
+  border-color: var(--optionalColor);
+}
+
+/*-------------------------------
+        Work Process Section CSS
+-------------------------------*/
+.process-card.style-three {
+  background-color: #F4ECE6;
+}
+
+/*-------------------------------
+        Contact Section CSS
+-------------------------------*/
+.form-wrapper.style-one input, .form-wrapper.style-one select, .form-wrapper.style-one textarea {
+  background-color: #5F4841;
+}
+.form-wrapper.style-two input, .form-wrapper.style-two select, .form-wrapper.style-two textarea {
+  background-color: #F4ECE6;
+  border: 1px solid #EAE2DC;
+}
+.form-wrapper.style-two .file-upload {
+  background-color: #F4ECE6;
+}
+.form-wrapper.style-three input, .form-wrapper.style-three select, .form-wrapper.style-three textarea {
+  background-color: var(--linenColor);
+  border: 1px solid #EAE2DC;
+}
+
+.faq-contact-box {
+  background-color: #5F4841;
+}
+.faq-contact-box:after {
+  border-left: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.contact-area.style-one .contact-bg:after {
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0) 50%, #0A0A0A 100%);
+}
+
+.checkbox.style-one label:before {
+  background-color: #F4ECE6;
+  border: 1px solid #EAE2DC;
+}
+.checkbox.style-two label:before {
+  background-color: var(--linenColor);
+  border: 1px solid #EAE2DC;
+}
+
+.checkbox.style-one input:checked + label:before,
+.checkbox.style-two input:checked + label:before {
+  border-color: transparent;
+}
+
+.checkbox.style-one input:checked + label:after,
+.checkbox.style-two input:checked + label:after {
+  background: var(--primaryColor);
+}
+
+/*-------------------------------
+        Pricing Section CSS
+-------------------------------*/
+.pricing-slider {
+  background-color: var(--primaryColor);
+}
+.pricing-slider:before {
+  background-color: var(--secondaryColor);
+}
+
+/*-------------------------------
+        Career Card CSS
+-------------------------------*/
+.feature-box .feature-counter {
+  background-color: #FBF6F0;
+}
+
+/*-------------------------------
+        Blog Section CSS
+-------------------------------*/
+.blog-card.style-one .blog-info .blog-metainfo li a {
+  color: var(--secondaryColor);
+}
+.blog-card.style-one .blog-info .blog-metainfo li a:hover {
+  color: var(--primaryColor);
+}
+.blog-card.style-two .blog-info .blog-metainfo li a {
+  color: var(--secondaryColor);
+}
+.blog-card.style-two .blog-info .blog-metainfo li a:hover {
+  color: var(--primaryColor);
+}
+.blog-card .blog-date:hover {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+}
+.blog-card .blog-date:hover span {
+  color: var(--whiteColor);
+}
+
+.blog-metainfo.style-two {
+  background-color: #F4ECE6;
+}
+
+.blog-category:hover {
+  background-color: var(--titleColor);
+}
+
+/*-------------------------------
+    Sidebar Widget CSS 
+-------------------------------*/
+.sidebar .sidebar-widget {
+  background-color: #F4ECE6;
+}
+
+.search-widget input {
+  background-color: #FBF6F0;
+}
+
+.category-widget ul li a {
+  background-color: #FBF6F0;
+  border: 1px solid #E6E0DA;
+}
+.category-widget ul li a:hover {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  border-color: transparent;
+}
+
+.rp-post-card.style-two .rp-post-img {
+  background-color: var(--whiteColor);
+}
+
+.tags-widget ul li a {
+  background-color: #FBF6F0;
+  border: 1px solid #E6E0DA;
+}
+.tags-widget ul li a:hover {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  border-color: transparent;
+}
+
+.taglist li a {
+  background-color: #F4ECE6;
+  border: 1px solid #E6E0DA;
+}
+.taglist li a:hover {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  border-color: transparent;
+}
+
+.contact-info-box {
+  background-color: #F4ECE6;
+}
+
+/*---------------------------------
+    Dark Section CSS
+----------------------------------*/
+.theme-dark body,
+.theme-dark .bg-linen,
+.theme-dark .responsive-navbar {
+  background-color: #000;
+  color: #E0E0E0;
+}
+.theme-dark .text-para {
+  color: var(--darkParaColor);
+}
+.theme-dark .text-title, .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6 {
+  color: var(--whiteColor);
+}/*# sourceMappingURL=dark.css.map */
