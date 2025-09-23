@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zxx">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Link of CSS files -->
+        <link id="bootstrapStylesheet" rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/scrollcue.min.css">
+        <link rel="stylesheet" href="assets/css/remixicon.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/rtl.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <title>Olawx - Law Firm & Attorney HTML Template</title>
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    </head>
+    <body class="bg-linen">
+
+        <!--  Preloader Start -->
+        <div class="preloader-area" id="preloader">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--  Preloader End -->
+
+        <!-- Theme Switcher Start -->
+        <div class="theme-switcher">
+            <button class="toggle-switch-btn border-0"><i class="ri-settings-2-line rotate"></i></button>
+            <div class="switch-theme-mode mb-20">
+                <label id="switch" class="switch d-flex align-items-center">
+                    <small class="left text-title">Light</small>
+                    <input type="checkbox" onchange="toggleTheme()" id="slider">
+                    <span class="slider round"></span>
+                    <small class="right text-title">Dark</small>
+                </label>
+            </div>
+            <!-- RTL Switcher -->
+            <div class="rtl-switch">
+                <label class=" d-flex flex-wrap align-items-center">
+                    <small class="ltr text-title">LTR</small>
+                    <input type="checkbox" id="directionToggle">
+                    <span class="slider round"></span>
+                    <small class="rtl text-title">RTL</small>
+                </label>
+            </div>
+        </div>
+
+        <!-- Custom Cursor -->
+        <div class="cursor">
+            <span class="cursor-text d-flex flex-column align-items-center justify-content-center rounded-circle bg-white text-title fs-14 fw-semibold"></span>
+        </div>
+        <div class="cursor-inner"></div>
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                
+                <!-- Navbar Area Start -->
+                <div class="navbar-area style-one position-relative z-2" id="navbar">
+                    <div class="container-fluid style-one">
+                        <div class="navbar-wrapper d-flex align-items-center">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="assets/img/logo.png" alt="Logo" class="logo-light">
+                                <img src="assets/img/logo-white.png" alt="Logo" class="logo-dark">
+                            </a>
+                            <div class="menu-area me-auto">
+                                <div class="overlay"></div>
+                                <nav class="menu">
+                                    <div class="menu-mobile-header">
+                                        <button type="button" class="menu-mobile-arrow bg-transparent border-0"><i class="ri-arrow-left-s-line"></i></button>
+                                        <div class="menu-mobile-title"></div>
+                                        <button type="button" class="menu-mobile-close bg-transparent border-0"><i class="ri-close-line"></i></button>
+                                    </div>
+                                    <ul class="menu-section p-0 mb-0 lh-1">
+                                        <li class="menu-item-has-children">
+                                            <a href="javascript:void(0)" class="active">Home<i class="ri-add-line"></i></a>
+                                            <ul class="menu-subs menu-column-1">
+                                                <li class="list-item">
+                                                    <a href="index.html" class="active">Home - Law Firm</a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="index-2.html">Home - Empowering justice</a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="index-3.html">Home - Law Firm Agency</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="javascript:void(0)">Pages<i class="ri-add-line"></i></a>
+                                            <ul class="menu-subs menu-column-1">
+                                                <li><a href="about-us.html">About Us</a></li>
+                                                <li class="menu-item-has-children">
+                                                    <a href="javascript:void(0)">Attorneys<i class="ri-add-line"></i></a>
+                                                    <ul class="menu-subs menu-column-1">
+                                                        <li><a href="attorneys.html">Attorneys</a></li>
+                                                        <li><a href="attorney-details.html">Attorneys Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="our-clients.html">Our Clients</a></li>
+                                                <li><a href="gallery.html">Appointment</a></li>
+                                                <li><a href="pricing-plan.html">Pricing Plan</a></li>
+                                                <li><a href="faq.html">FAQ</a></li>
+                                                <li><a href="testimonials.html">Testimonials</a></li>
+                                                <li><a href="career.html">Career</a></li>
+                                                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                                <li><a href="error-404.html">Error 404</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="javascript:void(0)">Practice Areas<i class="ri-add-line"></i></a>
+                                            <ul class="menu-subs menu-column-1">
+                                                <li><a href="practice-areas.html">Practice Areas</a></li>
+                                                <li><a href="practice-area-details.html">Practice Area Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="javascript:void(0)">Case Studies<i class="ri-add-line"></i></a>
+                                            <ul class="menu-subs menu-column-1">
+                                                <li><a href="case-studies.html">Case Studies</a></li>
+                                                <li><a href="case-study-details.html">Case Study Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="javascript:void(0)">Blog<i class="ri-add-line"></i></a>
+                                            <ul class="menu-subs menu-column-1">
+                                                <li class="menu-item-has-children"><a href="javascript:void(0)">Blog
+                                                        Layout<i class="ri-add-line"></i></a>
+                                                    <ul class="menu-subs menu-column-1">
+                                                        <li><a href="blog.html">Blog</a></li>
+                                                        <li><a href="blog-standard.html">Standard</a></li>
+                                                        <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children"><a href="javascript:void(0)"> Blog
+                                                        Details<i class="ri-add-line"></i></a>
+                                                    <ul class="menu-subs menu-column-1">
+                                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                                        <li><a href="blog-details-left-sidebar.html">With Left Sidebar</a>
+                                                        </li>
+                                                        <li><a href="blog-details-right-sidebar.html">With Right Sidebar</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children"><a href="javascript:void(0)">Others<i class="ri-add-line"></i></a>
+                                                    <ul class="menu-subs menu-column-1">
+                                                        <li><a href="author.html">Author</a></li>
+                                                        <li><a href="category.html">Category</a></li>
+                                                        <li><a href="tag.html">Tag</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="javascript:void(0)">Shop<i class="ri-add-line"></i></a>
+                                            <ul class="menu-subs menu-column-1">
+                                                <li><a href="shop.html">Shop</a></li>
+                                                <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
+                                                <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                                <li><a href="service-details.html">Shop Details</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="wishlist.html">Wishlist</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="login.html">Login</a></li>
+                                                <li><a href="register.html">Register</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+                                <div class="option-item position-relative d-flex align-items-center">
+                                    <div class="mobile-options position-relative d-lg-none">
+                                        <button class="dropdown-toggle  text-center bg-transparent border-0 p-0 transition" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                            <i class="ri-more-fill"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-centered mobile-option-list top-1 border-0" data-bs-popper="static">
+                                            <a href="my-account.html" class="btn style-three fw-semibold border-0 position-relative z-1 round-10 transition">
+                                                Get Started<i class="ri-add-circle-line"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <form action="#" class="search-form position-relative d-xl-inline d-none">
+                                        <input type="search" class="bg-transparent text-title outline-0" placeholder="Search here ...">
+                                        <button class="position-absolute bg-transparent p-0 border-0 transition"><i class="ri-search-line"></i></button>
+                                    </form>
+                                    <button class="search-btn bg-transparent border-0 d-xl-none d-inline flex-column align-items-center justify-content-center dropdown-toggle transition" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                        <i class="ri-search-line"></i>
+                                        <i class="ri-close-line"></i>
+                                    </button>
+                                    <div class="search-dropdown dropdown-menu dropdown-menu-right top-1 border-0" data-bs-popper="static">
+                                        <form class="search-popup position-relative" action="#">
+                                            <input type="search" class="form-control text-para" placeholder="Search Here">
+                                            <button type="submit" class="position-absolute top-0 end-0 h-100 border-0 bg-transparent d-flex flex-column align-items-center justify-content-center"><i class="ri-search-2-line"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="option-item d-lg-block d-none">
+                                    <a href="my-account.html" class="btn style-three fw-semibold border-0 position-relative z-1 round-10 transition">
+                                        Get Started<i class="ri-add-circle-line"></i>
+                                    </a>
+                                </div>
+                                <div class="option-item">
+                                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar-area" aria-controls="sidebar-area" class="sidebar-btn p-0 d-flex flex-column align-items-center justify-content-center h-100 bg-transparent border-0">
+                                        <i class="flaticon-menu"></i>
+                                    </button>
+                                </div>
+                                <div class="option-item d-lg-none">
+                                    <button type="button" class="menu-mobile-trigger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navbar Area End -->
+
+                <!-- Sidebar Start-->
+                <div class="sidebar-wrap offcanvas bg-ash offcanvas-end border-0" tabindex="-1" id="sidebar-area">
+                    <div class="offcanvas-header d-flex flex-wrap align-items-center justify-content-between">
+                        <a href="index.html" class="logo d-block">
+                            <img src="assets/img/logo.png" alt="Logo" class="logo-light">
+                            <img src="assets/img/logo-white.png" alt="Logo" class="logo-dark">
+                        </a>
+                        <button type="button" class="close-btn bg_white border-0 text-title d-flex flex-column align-items-center justify-content-center rounded-circle p-0 transition" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="ri-close-line"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body position-relative z-1">
+                        <ul class="contact-info list-unstyled mb-30">
+                            <li class="position-relative">
+                                <i class="ri-map-pin-2-fill"></i>
+                                <h6 class="text-title fw-bold mb-1">Location</h6>
+                                <p class="text-para mb-0">15 Washington Square, New York, USA</p>
+                            </li>
+                            <li class="position-relative">
+                                <i class="ri-mail-fill"></i>
+                                <h6 class="text-title fw-bold mb-1">Email</h6>
+                                <a href="mailto:hello@aitom.com" class="text-para link-hover-primary">hello@aitom.com</a>
+                            </li>
+                            <li class="position-relative">
+                                <i class="ri-phone-fill"></i>
+                                <h6 class="text-title fw-bold mb-1">Phone</h6>
+                                <a href="tel:30098765432150" class="text-para link-hover-primary">(+30) 098765432150</a>
+                            </li>
+                        </ul>
+                        <div class="comp-map round-20 mb-35">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8385385572983!2d144.95358331584498!3d-37.81725074201705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4dd5a05d97%3A0x3e64f855a564844d!2s121%20King%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sbd!4v1612419490850!5m2!1sen!2sbd">
+                            </iframe>
+                        </div>
+                        <p class="text-para mb-18">Please sign up to follow the latest news and events from us we promise
+                            not to spam your inbox</p>
+                        <form action="#" class="newsletter-form style-one position-relative">
+                            <input type="email" class="w-100 border-0 text-para outline-0 round-10" placeholder="Enter Your Email">
+                            <button class="btn style-two fw-semibold border-0 position-absolute z-1 round1-0">
+                                Subscribe<i class="ri-add-circle-line"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Sidebar End-->
+
+                <!-- Breadcrumb Section Start -->
+                <div class="breadcrumb-area bg-f position-relative z-1" style="background-image: url(assets/img/breadcrumb/br-blog-details.jpg);">
+                    <div class="container text-center">
+                        <h2 class="section-title style-two fw-bold text-white mb-15">Blog Details</h2>
+                        <ul class="d-flex align-items-center justify-content-center list-unstyled mb-0">
+                            <li class="position-relative"><a href="index.html">Home</a></li>
+                            <li class="position-relative"><a href="blog.html">Blog</a></li>
+                            <li class="position-relative">Blog Details</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Breadcrumb Section End -->
+
+                <!-- Career Section Start -->
+                <div class="container pt-115 pb-85">
+                    <div class="row">
+                        <div class="col-xl-8 offset-xl-2 col-md-10 offset-md-1 text-center">
+                            <h6 class="fs-16 fw-normal text-para mb-12 reveal-text-bottom">Build Your Career At Olawx</h6>
+                            <h2 class="section-title style-one text-center reveal-text-bottom mb-45">Join our team of exceptional legal professionals and grow your career at one of the nation's leading law firms</h2>
+                        </div>
+                    </div>
+                    <div class="row  justify-content-center">
+                        <div class="col-xl-4 col-md-6 mb-30">
+                            <div class="job-card bg_white round-20 h-100">
+                                <h3 class="fs-20 fw-semibold mb-1">Senior Corporate Attorney</h3>
+                                <p class="d-flex flex-wrap align-items-center justify-content-between mb-20">
+                                    <span>New York, NY</span>
+                                    <span class="text_secondary">Full Time</span>
+                                </p>
+                                <p>We're seeking an experienced corporate attorney to join our growing M&A practice. The ideal candidate will have 8+ years of experience in corporate transactions.</p>
+                                <h3 class="fs-20 fw-semibold mb-15">Requirements:</h3>
+                                <ul class="feature-list style-two bg-linen list-unstyled round-10 mb-35">
+                                    <li class="position-relative">JD from an accredited law school</li>
+                                    <li class="position-relative">Admission to New York State Bar</li>
+                                    <li class="position-relative">8+ years of corporate law experience</li>
+                                    <li class="position-relative">Expertise in M&A transactions</li>
+                                    <li class="position-relative">Excellent negotiation & drafting skills</li>
+                                </ul>
+                                <a href="login.html" class="btn style-one d-inline-flex flex-wrap align-items-center transition">
+                                    <span class="btn-text d-flex flex-column align-items-center justify-content-center transition">Apply Now</span>
+                                    <span class="btn-icon d-flex flex-column align-items-center justify-content-center transition"><img src="assets/img/icons/right-arrow.svg" alt="Icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-30">
+                            <div class="job-card bg_white round-20 h-100">
+                                <h3 class="fs-20 fw-semibold mb-1">Intellectual Property Associate</h3>
+                                <p class="d-flex flex-wrap align-items-center justify-content-between mb-20">
+                                    <span>Remote</span>
+                                    <span class="text_secondary">Full Time</span>
+                                </p>
+                                <p>Join our IP practice group working with tech startups and established companies on patent, trademark, ipsum lorem dolor marq and copyright matters.</p>
+                                <h3 class="fs-20 fw-semibold mb-15">Requirements:</h3>
+                                <ul class="feature-list style-two bg-linen list-unstyled round-10 mb-35">
+                                    <li class="position-relative">JD from an accredited law school</li>
+                                    <li class="position-relative">Admission to New York State Bar</li>
+                                    <li class="position-relative">2-4 years of IP experience</li>
+                                    <li class="position-relative">Technical background preferred</li>
+                                    <li class="position-relative">USPTO registration a plus</li>
+                                </ul>
+                                <a href="login.html" class="btn style-one d-inline-flex flex-wrap align-items-center transition">
+                                    <span class="btn-text d-flex flex-column align-items-center justify-content-center transition">Apply Now</span>
+                                    <span class="btn-icon d-flex flex-column align-items-center justify-content-center transition"><img src="assets/img/icons/right-arrow.svg" alt="Icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-30">
+                            <div class="job-card bg_white round-20 h-100">
+                                <h3 class="fs-20 fw-semibold mb-1">Summer Law Clerk</h3>
+                                <p class="d-flex flex-wrap align-items-center justify-content-between mb-20">
+                                    <span>Multiple Locations</span>
+                                    <span class="text_secondary">Full Time</span>
+                                </p>
+                                <p>Our summer program offers law students hands-on experience across multiple practice areas with mentorship from experienced attorneys.</p>
+                                <h3 class="fs-20 fw-semibold mb-15">Requirements:</h3>
+                                <ul class="feature-list style-two bg-linen list-unstyled round-10 mb-35">
+                                    <li class="position-relative">Current law student (2L or 3L)</li>
+                                    <li class="position-relative">Strong academic record</li>
+                                    <li class="position-relative">Excellent research and writing skills</li>
+                                    <li class="position-relative">Interest in business law</li>
+                                    <li class="position-relative">Previous legal experience a plus</li>
+                                </ul>
+                                <a href="login.html" class="btn style-one d-inline-flex flex-wrap align-items-center transition">
+                                    <span class="btn-text d-flex flex-column align-items-center justify-content-center transition">Apply Now</span>
+                                    <span class="btn-icon d-flex flex-column align-items-center justify-content-center transition"><img src="assets/img/icons/right-arrow.svg" alt="Icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Career Section End -->
+
+                <!-- Work Process Start -->
+                <div class="bg-peach pt-115 pb-85">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 offset-xl-2 col-md-10 offset-md-1 text-center">
+                                <h6 class="fs-16 fw-normal text-para mb-12 reveal-text-bottom">Our Culture</h6>
+                                <h2 class="section-title style-one text-center reveal-text-bottom mb-45">At Olawx, we foster an environment of excellence, collaboration, and growth</h2>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-xl-4 col-md-6 mb-30">
+                                <div class="process-card style-three bg-white round-20 h-100">
+                                    <div class="process-icon mb-22">
+                                        <img src="assets/img/icons/case-evalution.svg" alt="Icon">
+                                    </div>
+                                    <h3 class="fs-22 fs-xxl-24 fw-semibold mb-18">Collaborative Environment</h3>
+                                    <p class="mb-0">We believe in teamwork and knowledge sharing. Our attorneys collaborate across practice areas to deliver best results for client.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6 mb-30">
+                                <div class="process-card style-three bg-white round-20 h-100">
+                                    <div class="process-icon mb-22">
+                                        <img src="assets/img/icons/learning.svg" alt="Icon">
+                                    </div>
+                                    <h3 class="fs-22 fs-xxl-24 fw-semibold mb-18">Continuous Learning</h3>
+                                    <p class="mb-0">We invest in our team's professional development with regular training, conference, and opportunities for specialization.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6 mb-30">
+                                <div class="process-card style-three bg-white round-20 h-100">
+                                    <div class="process-icon mb-22">
+                                        <img src="assets/img/icons/excellence-service.svg" alt="Icon">
+                                    </div>
+                                    <h3 class="fs-22 fs-xxl-24 fw-semibold mb-18">Excellence In Service</h3>
+                                    <p class="mb-0">We're committed to providing exceptional legal services while maintaining the highest ethical standards in everything we do.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Work Process End -->
+
+                <!-- Appointment Section Start -->
+                <div class="container ptb-115">
+                    <div class="row">
+                        <div class="col-lg-5 pe-xxl-4 mb-4 mb-lg-0">
+                            <h6 class="fs-16 fw-normal text-para reveal-text-right mb-12">Join Our Team</h6>
+                            <h2 class="section-title style-one fw-semibold text-title reveal-text-bottom mb-20">Start your journey with Olawx Law Firm</h2>
+                            <div class="feature-box bg-dawnPink round-20">
+                                <h3 class="fs-24 fw-semibold ls-n2 mb-8">Our Hiring Process</h3>
+                                <p class="mb-25">We've designed our hiring process to be thorough yet efficient ensuring we find the right fit for both candidates and our firm.</p>
+                                <div class="feature-item d-flex flex-wrap">
+                                    <span class="feature-counter d-flex flex-column align-items-center justify-content-center rounded-circle">01</span>
+                                    <div class="feature-info">
+                                        <h5 class="fs-20 fw-semibold ls-n2 mb-1">Application Review</h5>
+                                        <p class="mb-0">Our hiring team reviews all applications and selects candidates for initial screening.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item d-flex flex-wrap">
+                                    <span class="feature-counter d-flex flex-column align-items-center justify-content-center rounded-circle">02</span>
+                                    <div class="feature-info">
+                                        <h5 class="fs-20 fw-semibold ls-n2 mb-1">Phone Screening</h5>
+                                        <p class="mb-0">Selected candidates will have a phone conversation with our HR team.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item d-flex flex-wrap">
+                                    <span class="feature-counter d-flex flex-column align-items-center justify-content-center rounded-circle">03</span>
+                                    <div class="feature-info">
+                                        <h5 class="fs-20 fw-semibold ls-n2 mb-1">Interviews</h5>
+                                        <p class="mb-0">Qualified candidates will be invited for interviews with team members and partners.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item d-flex flex-wrap">
+                                    <span class="feature-counter d-flex flex-column align-items-center justify-content-center rounded-circle">04</span>
+                                    <div class="feature-info">
+                                        <h5 class="fs-20 fw-semibold ls-n2 mb-1">Offer</h5>
+                                        <p class="mb-0">Successful candidates will receive an offer to join our team.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 ps-xl-5">
+                            <h6 class="fs-20 fw-semibold text-title mb-20 ms-xxl-4 ps-xxl-2">Apply Now</h6>
+                            <form action="#" class="form-wrapper style-two ms-xxl-4 ps-xxl-2">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-20">
+                                            <label for="fname" class="d-blck text-title w-100 mb-8">First Name*</label>
+                                            <input type="text" name="fname" id="fname" class="w-100 ht-54 text-para outline-0 round-5" placeholder="Brittney">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-20">
+                                            <label for="lname" class="d-blck text-title w-100 mb-8">Last Name*</label>
+                                            <input type="text" name="lname" id="lname" class="w-100 ht-54 text-para outline-0 round-5" placeholder="Hopkins">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-20">
+                                            <label for="email" class="d-blck text-title w-100 mb-8">Email*</label>
+                                            <input type="email" name="email" id="email" class="w-100 ht-54 text-para outline-0 round-5" placeholder="brittney@olawx.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-20">
+                                            <label for="phone" class="d-blck text-title w-100 mb-8">Phone Number</label>
+                                            <input type="number" name="phone" id="phone" class="w-100 ht-54 text-para outline-0 round-5" placeholder="www.Olawx.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group mb-20">
+                                            <label for="practice_areas" class="d-blck text-title w-100 mb-8">Position Applying For</label>
+                                            <select id="practice_areas" class="w-100 ht-54 text-para outline-0 round-5 custom-select-field">
+                                                <option value="1">Senior Attorney</option>
+                                                <option value="2">Junior Attorney</option>
+                                                <option value="3">Consultant</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group mb-15">
+                                            <label for="comment" class="d-blck text-title w-100 mb-8">Cover Letter</label>
+                                            <textarea name="comment" id="comment" class="w-100 ht-150 text-para outline-0 round-5 resize-0" placeholder="Brief Description of Your Legal Needs..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group mb-25">
+                                            <label for="file" class="d-blck text-title w-100 mb-8">Upload Resume</label>
+                                            <div class="file-upload position-relative">
+                                                <input type="file" name="file" id="file" class="w-100 ht-54 text-para outline-0 round-5">
+                                                <span class="d-block text-center"> Choose File (PDF, DOC)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn style-one d-inline-flex flex-wrap align-items-center transition">
+                                            <span class="btn-text d-flex flex-column align-items-center justify-content-center transition">Submit Application</span>
+                                            <span class="btn-icon d-flex flex-column align-items-center justify-content-center transition"><img src="assets/img/icons/right-arrow.svg" alt="Icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Appointment Section End -->
+
+                <!-- Work Process Start -->
+                <div class="container pb-85">
+                    <div class="row">
+                        <div class="col-xl-10 offset-xl-1 col-md-10 offset-md-1 text-center">
+                            <h6 class="fs-16 fw-normal text-para mb-12 reveal-text-bottom">Industries We Serve</h6>
+                            <h2 class="section-title style-one text-center reveal-text-bottom mb-45">Our attorneys have deep expertise across multiple sectors</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-4 col-md-6 mb-30">
+                            <div class="process-card style-three bg-dawnPink round-20 h-100">
+                                <div class="process-icon mb-22">
+                                    <img src="assets/img/icons/case-evalution.svg" alt="Icon">
+                                </div>
+                                <h3 class="fs-22 fs-xxl-24 fw-semibold mb-18">Competitive Compensation</h3>
+                                <p class="mb-0">Industry-leading salary packages with performance bonuses and profit sharing.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-30">
+                            <div class="process-card style-three bg-dawnPink round-20 h-100">
+                                <div class="process-icon mb-22">
+                                    <img src="assets/img/icons/health.svg" alt="Icon">
+                                </div>
+                                <h3 class="fs-22 fs-xxl-24 fw-semibold mb-18">Health & Wellness</h3>
+                                <p class="mb-0">Comprehensive medical, dental, and vision insurance for you and your family.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-30">
+                            <div class="process-card style-three bg-dawnPink round-20 h-100">
+                                <div class="process-icon mb-22">
+                                    <img src="assets/img/icons/retirement.svg" alt="Icon">
+                                </div>
+                                <h3 class="fs-22 fs-xxl-24 fw-semibold mb-18">Retirement Planning</h3>
+                                <p class="mb-0">401(k) plan with generous company matching and financial planning services.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-30">
+                            <div class="process-card style-three bg-dawnPink round-20 h-100">
+                                <div class="process-icon mb-22">
+                                    <img src="assets/img/icons/strategic-planning.svg" alt="Icon">
+                                </div>
+                                <h3 class="fs-22 fs-xxl-24 fw-semibold mb-18">Flexible Time Off</h3>
+                                <p class="mb-0">Generous vacation policy, paid holidays, and flexible work arrangements.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-30">
+                            <div class="process-card style-three bg-dawnPink round-20 h-100">
+                                <div class="process-icon mb-22">
+                                    <img src="assets/img/icons/execution.svg" alt="Icon">
+                                </div>
+                                <h3 class="fs-22 fs-xxl-24 fw-semibold mb-18">Professional Development</h3>
+                                <p class="mb-0">Tuition reimbursement, CLE allowances, and professional membership fees.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-30">
+                            <div class="process-card style-three bg-dawnPink round-20 h-100">
+                                <div class="process-icon mb-22">
+                                    <img src="assets/img/icons/family-support.svg" alt="Icon">
+                                </div>
+                                <h3 class="fs-22 fs-xxl-24 fw-semibold mb-18">Family Support</h3>
+                                <p class="mb-0">Parental leave, childcare assistance, and family-friendly workplace policies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Work Process End -->
+
+                <!-- Footer Section Start -->
+                <footer class="footer-area style-three bg-title pt-115">
+                    <div class="container">
+                        <div class="row pb-85">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <a href="index.html" class="logo d-block mb-22">
+                                        <img src="assets/img/logo-white.png" alt="Logo">
+                                    </a>
+                                    <h3 class="fs-20 fw-semibold text_secondary">Newsletter</h3>
+                                    <p class="mb-18">Subscribe to our newsletter for the latest legal updates news</p>
+                                    <form action="#" class="newsletter-form style-two position-relative">
+                                        <input type="email" class="w-100 bg-transparent text-white outline-0" placeholder="Email address">
+                                        <button class="bg-transparent border-0 position-absolute text_secondary end-0"><i class="ri-send-plane-2-line"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 offset-xl-1 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <ul class="contact-info list-unstyled mb-0">
+                                        <li>
+                                            <span class="d-block mb-1 text-white">Call Us</span>
+                                            <a href="tel:15555078494" class="text_secondary fw-bold hover-text-primary transition">+1 (555) 507-8494</a>
+                                        </li>
+                                        <li>
+                                            <span class="d-block mb-1 text-white">Email Us</span>
+                                            <a href="mailto:info@olawx.com" class="text_secondary fw-semibold hover-text-primary transition">info@olawx.com</a>
+                                        </li>
+                                        <li>
+                                            <span class="d-block mb-1 text-white">Address</span>
+                                            <p class="mb-0 pe-xxl-5">753 Legal Avenue, Suite 159, NY 10101, New York, USA</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <h3 class="footer-widget-title fs-20 fw-semibold text_secondary mb-30">Practice
+                                        Areas</h3>
+                                    <ul class="footer-menu style-two list-unstyled mb-0">
+                                        <li><a href="practice-areas.html">Commercial Litigation</a>
+                                        <li><a href="practice-areas.html">Corporate Law</a>
+                                        <li><a href="practice-areas.html">Intellectual Property</a>
+                                        <li><a href="practice-areas.html">Family Law</a>
+                                        <li><a href="practice-areas.html">Real Estate Law</a>
+                                        <li><a href="practice-areas.html">Employment Law</a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-md-6">
+                                <div class="footer-widget mb-30">
+                                    <h3 class="footer-widget-title fs-20 fw-semibold text_secondary mb-30">Quick Links
+                                    </h3>
+                                    <ul class="footer-menu style-two list-unstyled mb-0">
+                                        <li><a href="index.html">Home</a>
+                                        <li><a href="about-us.html">About Us</a>
+                                        <li><a href="practice-areas.html">Case Studies</a>
+                                        <li><a href="privacy Policy.html">Privacy Policy</a>
+                                        <li><a href="terms-conditions.html">Terms & Conditions</a>
+                                        <li><a href="contact.html">Contact Us</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="row align-items-center">
+                                <div class="col-md-7 pe-md-0 mb-sm-10">
+                                    <p class="copyright-text text-offwhite text-md-start text-center mb-0"><i class="ri-copyright-line"></i><span class="text-white fw-semibold ms-1 me-1">Olawx</span> Is Proudly Owned By <a href="https://envytheme.com/" target="_blank" class="text_secondary fw-semibold link-hover-secondary transition">EnvyTheme</a>
+                                    </p>
+                                </div>
+                                <div class="col-md-5 text-md-end text-center">
+                                    <ul class="social-profile style-two list-unstyled mb-0">
+                                        <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-facebook-fill"></i></a></li>
+                                        <li><a href="https://x.com/?lang=en" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-twitter-x-line"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-linkedin-fill"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-instagram-line"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+
+            </div>
+        </div>
+            <!-- Back to Top -->
+            <div id="progress-wrap" class="progress-wrap style-one">
+                <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                    <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+                </svg>
+            </div>
+            <!-- Link of JS files -->
+            <script src="assets/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/js/megamenu.js"></script>
+            <script src="assets/js/swiper-bundle.min.js"></script>
+            <script src="assets/js/fslightbox.js"></script>
+            <script src="assets/js/gsap.min.js"></script>
+            <script src="assets/js/scrollTrigger.min.js"></script>
+            <script src="assets/js/lenis.min.js"></script>
+            <script src="assets/js/scrollToPlugin.js"></script>
+            <script src="assets/js/SplitText.min.js"></script>
+            <script src="assets/js/customEase.js"></script>
+            <script src="assets/js/scrollcue.min.js"></script>
+            <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,154 @@
+
+/*---------------------------------
+    Footer CSS 
+-----------------------------------*/
+.newsletter-form{
+    &.style-one{
+        input{
+            padding: 11px 18px;
+            border: 1px solid #EBE5DF;
+            &::placeholder{
+                opacity: 0.5;
+                color: var(--paraColor);
+            }
+        }
+    }
+}
+.footer-area{
+    &.style-one{
+        .footer-bottom{
+            padding: 25px 0;
+        }
+    }
+    &.style-two,
+    &.style-three{
+        .footer-bottom{
+            padding: 31px 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+    }
+}
+.footer-widget{
+    .footer-widget-title{
+        &.style-two{
+            &:before{
+                background-color: rgba(33,37,41,0.2);
+            }
+        }
+    }
+    .footer-menu{
+        li{
+            margin-bottom: 5px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            a{
+                position: relative;
+                &:after {
+                    position: absolute;
+                    content: "";
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform 0.5s;
+                }
+                &:hover{
+                    &:after {
+                        transform: scaleX(1);
+                        transform-origin: left;
+                    }
+                }
+            }
+        }
+        &.style-one{
+            li{
+                a{
+                    color: var(--paraColor);
+                    &:after{
+                        background-color: var(--primaryColor);
+                    }
+                    &:hover{
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+        &.style-two{
+            li{
+                a{
+                    color: var(--offwhiteColor);
+                    &:after{
+                        background-color: var(--secondaryColor);
+                    }
+                    &:hover{
+                        color: var(--secondaryColor);
+                    }
+                }
+            }
+        }
+    }
+    .newsletter-form{
+        &.style-two{
+            input{
+                border: none;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+        }
+    }
+    .contact-info{
+        li{
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// Max width 767px //
+@media only screen and (max-width: 767px) {
+    .footer-area{
+        &.style-three{
+            .footer-bottom{
+                padding: 20px 0;
+            }
+        }
+    }
+    .footer-widget{
+        .footer-widget-title{
+            margin-bottom: 18px;
+        }
+    }
+}
+
+// Max width 991px //
+@media only screen and (max-width: 991px) {
+    .footer-area{
+        .footer-bottom {
+            .footer-bottom-menu {
+                li{
+                    margin-right: 9px;
+                    padding-right: 18px;
+                }
+            }
+        }
+    }
+}
+// Min width 1400px //
+@media only screen and (min-width: 1400px) {
+    .footer-area{
+        &.style-two{
+            .footer-bottom{
+                padding: 44px 0;
+            }
+        }
+    }
+}
+
+/*---------------------------------
+   RTL CSS
+----------------------------------*/

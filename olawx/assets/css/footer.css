@@ -1,0 +1,103 @@
+/*---------------------------------
+    Footer CSS 
+-----------------------------------*/
+.newsletter-form.style-one input {
+  padding: 11px 18px;
+  border: 1px solid #EBE5DF;
+}
+.newsletter-form.style-one input::-moz-placeholder {
+  opacity: 0.5;
+  color: var(--paraColor);
+}
+.newsletter-form.style-one input::placeholder {
+  opacity: 0.5;
+  color: var(--paraColor);
+}
+
+.footer-area.style-one .footer-bottom {
+  padding: 25px 0;
+}
+.footer-area.style-two .footer-bottom, .footer-area.style-three .footer-bottom {
+  padding: 31px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-widget .footer-widget-title.style-two:before {
+  background-color: rgba(33, 37, 41, 0.2);
+}
+.footer-widget .footer-menu li {
+  margin-bottom: 5px;
+}
+.footer-widget .footer-menu li:last-child {
+  margin-bottom: 0;
+}
+.footer-widget .footer-menu li a {
+  position: relative;
+}
+.footer-widget .footer-menu li a:after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.footer-widget .footer-menu li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.footer-widget .footer-menu.style-one li a {
+  color: var(--paraColor);
+}
+.footer-widget .footer-menu.style-one li a:after {
+  background-color: var(--primaryColor);
+}
+.footer-widget .footer-menu.style-one li a:hover {
+  color: var(--primaryColor);
+}
+.footer-widget .footer-menu.style-two li a {
+  color: var(--offwhiteColor);
+}
+.footer-widget .footer-menu.style-two li a:after {
+  background-color: var(--secondaryColor);
+}
+.footer-widget .footer-menu.style-two li a:hover {
+  color: var(--secondaryColor);
+}
+.footer-widget .newsletter-form.style-two input {
+  border: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-widget .contact-info li {
+  margin-bottom: 20px;
+}
+.footer-widget .contact-info li:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-area.style-three .footer-bottom {
+    padding: 20px 0;
+  }
+  .footer-widget .footer-widget-title {
+    margin-bottom: 18px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .footer-area .footer-bottom .footer-bottom-menu li {
+    margin-right: 9px;
+    padding-right: 18px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .footer-area.style-two .footer-bottom {
+    padding: 44px 0;
+  }
+}
+/*---------------------------------
+   RTL CSS
+----------------------------------*//*# sourceMappingURL=footer.css.map */
