@@ -1,0 +1,133 @@
+<div class="faq-area">
+    <div class="container">
+        <div class="section-title text-center">
+            <h4 class="mb-0">
+                Frequently Asked Questions 
+            </h4>
+            <p>
+                Do you have a question? We’re here to help. If you need more information, feel free to <a href="mailto:hello@envytheme.com">contact us</a>.
+            </p>
+        </div>
+        <div class="faq-accordion accordion mx-auto">
+            <div class="accordion-item border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(0)"
+                    [ngClass]="{ 'open': isSectionOpen(0) }"
+                    class="accordion-button d-block text-start shadow-none bg-transparent fw-semibold border-0"
+                >
+                    Are all the frameworks and technologies listed above included in the purchase?
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                    <div class="accordion-body">
+                        <p>
+                            Yes, purchase the template, and the downloadable package will include all the listed frameworks and technologies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(1)"
+                    [ngClass]="{ 'open': isSectionOpen(1) }"
+                    class="accordion-button d-block text-start shadow-none bg-transparent fw-semibold border-0"
+                >
+                    Is there a fee for each upgrade?
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                    <div class="accordion-body">
+                        <p>
+                            Certainly not. Upon purchasing a license, you’ll automatically receive all upcoming releases without additional cost.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(2)"
+                    [ngClass]="{ 'open': isSectionOpen(2) }"
+                    class="accordion-button d-block text-start shadow-none bg-transparent fw-semibold border-0"
+                >
+                    What is the “Regular” license?
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                    <div class="accordion-body">
+                        <p>
+                            You or one client can use it in a single end product for which end users are not charged. The total price includes a buyer fee and the item price.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(3)"
+                    [ngClass]="{ 'open': isSectionOpen(3) }"
+                    class="accordion-button d-block text-start shadow-none bg-transparent fw-semibold border-0"
+                >
+                    What is the “Extended” license?
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(3) }">
+                    <div class="accordion-body">
+                        <p>
+                            You or one client can use it for a single end product for which end users can be charged. The total price includes the item price and a buyer fee.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(4)"
+                    [ngClass]="{ 'open': isSectionOpen(4) }"
+                    class="accordion-button d-block text-start shadow-none bg-transparent fw-semibold border-0"
+                >
+                    What should I do if I need a custom license for multiple websites?
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(4) }">
+                    <div class="accordion-body">
+                        <p>
+                            Please send us an email to <a href="mailto:hello@envytheme.com">hello&#64;envytheme.com</a> by mentioning your requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(5)"
+                    [ngClass]="{ 'open': isSectionOpen(5) }"
+                    class="accordion-button d-block text-start shadow-none bg-transparent fw-semibold border-0"
+                >
+                    Can one Regular or Extended license be used for multiple applications?
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(5) }">
+                    <div class="accordion-body">
+                        <p>
+                            Regular and Extended licenses are limited to one product each. A single license cannot be used for multiple applications; each product requires its own license.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(6)"
+                    [ngClass]="{ 'open': isSectionOpen(6) }"
+                    class="accordion-button d-block text-start shadow-none bg-transparent fw-semibold border-0"
+                >
+                    Which license do I need for a SaaS application?
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(6) }">
+                    <div class="accordion-body">
+                        <p>
+                            An extended license is required for each SaaS application’s end product that generates user revenue. If customers are not charged, a Regular License is adequate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

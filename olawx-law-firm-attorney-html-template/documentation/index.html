@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Olawx - Law Firm & Attorney HTML Template</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/prism.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body data-bs-spy="scroll" data-bs-offset="70">
+
+        <!-- Sidebar -->
+        <div class="sidebar-area">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <ul>
+                        <li><a href="#introduction" title="Introduction">Introduction</a></li>
+                        <li><a href="#getting_started" title="Getting Started">Getting Started</a></li>
+                        <li><a href="#head_css_structure" title="HEAD CSS Structure">HEAD CSS Structure</a></li>
+                        <li><a href="#javascript_structure" title="Javascript Structure">Javascript Structure</a></li>
+                        <li><a href="#real_demo_images" title="Real Demo Images">Real Demo Images</a></li>
+                        <li><a href="#html_structure" title="HTML Structure">HTML Structure</a></li>
+                        <li><a href="#responsive_breakpoints" title="Responsive Breakpoints">Responsive Breakpoints</a></li>
+                        <li><a href="#fonts_used" title="Fonts Used">Fonts Used</a></li>
+                        <li><a href="#color_change_option" title="Main Color Change Option">Main Color Change</a></li>
+                        <li><a href="#run_scss" title="How to Run SCSS">How to Run SCSS File</a></li>
+                        <li><a href="#slider_edit" title="Swiper Slider Edit Option">Swiper Slider Edit</a></li>
+                        <li><a href="#scroll_animation" title="How to Hide Scroll Animation">Scroll Animation</a></li>
+                        <li><a href="#speed_optimization" title="Speed Optimization">Speed Optimization</a></li>
+                        <li><a href="#google_map" title="How to Add a Google Map">Google Map</a></li>
+                        <li><a href="#credits" title="Credits">Credits</a></li>
+                        <li><a href="#supports" title="Support">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Sidebar -->
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <!-- Banner -->
+            <div class="banner-area">
+                <h1><strong>Olawx</strong> - Documentation</h1>
+            </div>
+            <!-- End Banner -->
+
+            <!-- Content -->
+            <div class="content-area">
+
+                <!-- Introduction -->
+                <div id="introduction" class="ptb-70">
+                    <h2>Introduction</h2>
+                    <p><strong>Olawx</strong> is a minimal clean template for <strong>Law Firm & Attorney</strong> website. It is created with Bootstrap 5.x and Sass. The template is suitable for Law Agency, Cnsultation Agency, Law Firm etc., websites.</p>
+                    <p>The template has <strong>RTL</strong> feature included, so using for <strong>Arabic</strong> and <strong>Hebrew</strong> language-based website would be quicker and easier.</p>
+                    <p>This template has well-commented, and easily customizable source code with detailed documentation. These features will help make the template uses and customization based on the ultimate needs.</p>
+                    <h6 style="margin-top: 20px; margin-bottom: 18px;"><strong>Template Features:</strong></h6>
+                    <ul class="mb-0">
+                        <li><strong>Multipage</strong> Demos</li>
+                        <li>Easy to Customize</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Clean & Simple Design</li>
+                        <li>Fully Responsive Layout</li>
+                        <li>W3 Valid</li>
+                        <li>Retina Ready</li>
+                        <li>Smooth Animation</li>
+                        <li>Swiper Slider</li>
+                        <li>RTL Support</li>
+                        <li>Remixicons <strong>Free icons</strong></li>
+                        <li>Built on Bootstrap <strong>(v5.x)</strong></li>
+                        <li><strong>No jQuery</strong> Dependency</li>
+                        <li>Built with <strong>Sass</strong></li>
+                        <li><strong>Well Documented</strong></li>
+                        <li>Crossbrowser Compatible with <strong>Edge, IE11+, Firefox, Opera, Chrome</strong></li>
+                        <li>Clean & Professional Code</li>
+                        <li>Developer Friendly</li>
+                    </ul>
+                </div>
+                <!-- End Introduction -->
+
+                <!-- Getting Started -->
+                <div id="getting_started">
+                    <h2>Getting Started</h2>
+                    <p>The template folder <strong>pakap</strong> and <strong>pakap-rtl</strong> is available inside the downloaded zip file. Need to unzip the zip file to find the template also the documentation folder.</p>
+                    <p>The <strong>files and folders structure</strong> is similar to the following:</p>
+                    <ol>
+                        <li><strong>assets/css</strong> — folder with CSS files.</li>
+                        <li><strong>assets/img</strong> — folder with image files.</li>
+                        <li><strong>assets/js</strong> — folder with Javascript files.</li>
+                        <li><strong>assets/fonts</strong> — folder with fonts files.</li>
+                    </ol>
+                    <p>Upload the template files to the server with the help of one of the FTP-clients like FileZilla.</p>
+					<h6 style="margin-top: 20px; margin-bottom: 12px;"><strong>Files Edit & Upload:</strong></h6>
+                    <p>Individual pages can be customized by opening in a code editor such as VS Code. Once all the customization completed then to make the website live you need to upload the updated project files to the hosting server for your own domain. The files can be uploaded using FTP client such as FileZilla.</p>
+                </div>
+                <!-- End Getting Started -->
+
+                <!-- HEAD CSS Structure -->
+                <div id="head_css_structure" class="ptb-70">
+                    <h2>HEAD CSS Structure</h2>
+                    <p>Followings are the <strong>css</strong> files which loaded inside the <strong>Head Section</strong>:</p>
+<pre class="line-numbers">
+<code class="language-markup">
+&lt;!-- Link of CSS files --&gt;
+&lt;link id="bootstrapStylesheet" rel="stylesheet" href="assets/css/bootstrap.min.css"&gt;
+&lt;link rel="stylesheet" href="assets/css/swiper-bundle.min.css"&gt;
+&lt;link rel="stylesheet" href="assets/css/scrollcue.min.css"&gt;
+&lt;link rel="stylesheet" href="assets/css/remixicon.css"&gt;
+&lt;link rel="stylesheet" href="assets/css/header.css"&gt;
+&lt;link rel="stylesheet" href="assets/css/style.css"&gt;
+&lt;link rel="stylesheet" href="assets/css/footer.css"&gt;
+&lt;link rel="stylesheet" href="assets/css/responsive.css"&gt;
+</code>
+</pre>
+     </div>
+                <!-- End HEAD CSS Structure -->
+
+                <!-- Javascript Structure -->
+                <div id="javascript_structure">
+                    <h2>Javascript Structure</h2>
+                    <p>Followings are the <strong>JS</strong> files which loaded before the end of <strong>HEAD or BODY Section:</strong>.</p>
+<pre class="line-numbers mb-0">
+<code class="language-markup">
+&lt;!-- Link of JS files --&gt;
+&lt;script src="assets/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+&lt;script src="assets/js/megamenu.js"&gt;&lt;/script&gt;
+&lt;script src="assets/js/swiper-bundle.min.js"&gt;&lt;/script&gt;
+&lt;script src="assets/js/fslightbox.js"&gt;&lt;/script&gt;
+&lt;script src="assets/js/gsap.min.js"&gt;&lt;/script&gt;
+&lt;script src="assets/js/scrollTrigger.min.js"&gt;&lt;/script&gt;
+&lt;script src="assets/js/lenis.min.js"&gt;&lt;/script&gt;
+&lt;script src="assets/js/scrollToPlugin.js"&gt;&lt;/script&gt;
+&lt;script src="assets/js/SplitText.min.js"&gt;&lt;/script&gt;
+&lt;script src="assets/js/customEase.js"&gt;&lt;/script&gt;
+&lt;script src="assets/js/scrollcue.min.js"&gt;&lt;/script&gt;
+&lt;script src="assets/js/main.js"&gt;&lt;/script&gt;
+</code>
+</pre>
+                </div>
+                <!-- End Javascript Structure -->
+
+                <!-- Do You Want Real Demo Images? -->
+                <div id="real_demo_images" class="ptb-70">
+                    <h2>Do You Want Real Demo Images?</h2>
+                    <p>Due to the <strong>Envato Policy</strong>, we are unable to include demo images inside the download bundle so for demo images please submit a ticket in <a href="https://support.envytheme.com/" target="_blank">https://support.envytheme.com/</a>.</p>
+                </div>
+                <!-- End Do You Want Real Demo Images? -->
+
+                <!-- HTML Structure -->
+                <div id="html_structure">
+                    <h2>HTML Structure</h2>
+                    <p>The <strong>olawx</strong> is a responsive template and is based on the <strong>Bootstrap Framework</strong>. For more information you can check the <strong><a target="_blank" href="https://getbootstrap.com/">Bootstrap CSS</a></strong>.</p>
+                    <p>The general template structure is the same throughout the template and each of the part is under a section with a section id name. Here is the <strong>general structure:</strong></p>
+<pre class="line-numbers mb-0">
+<code class="language-markup">
+&lt;!-- Hero Section Start --&gt;
+&lt;div class="hero-area style-one position-relative z-1 overflow-hidden h-lg-100"&gt;
+    &lt;div class="img-container position-absolute top-0 start-0 w-100 h-100"&gt;
+        &lt;img src="assets/img/hero/hero-bg-1.jpg" alt="Image" class="w-100 h-100 object-fit-cover"&gt;
+    &lt;/div&gt;
+    &lt;div class="container-fluid position-relative z-1"&gt;
+        &lt;div class="row align-items-end"&gt;
+            &lt;div class="col-lg-6 col-md-7"&gt;
+                &lt;div class="hero-content"&gt;
+                    &lt;h1 class="text-white fw-semibold ls-n2 mb-20"&gt;Resolving your complex legal challenges&lt;/h1&gt;
+                    &lt;div class="btn-wrap d-flex flex-wrap align-items-center"&gt;
+                        &lt;a href="appointment.html" class="btn style-two d-inline-flex flex-wrap align-items-center transition"&gt;
+                            &lt;span class="btn-text d-flex flex-column align-items-center justify-content-center transition"&gt;Free Consultation&lt;/span&gt;
+                            &lt;span class="btn-icon d-flex flex-column align-items-center justify-content-center transition"&gt;&lt;img src="assets/img/icons/right-arrow.svg" alt="Icon"&gt;&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;a href="mailto:info@olawx.com" class="fs-xxl-24 text-white hover-text-secondary transition"&gt;info@olawx.com&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-lg-6 col-md-5 text-md-end text-center"&gt;
+                &lt;div class="social-wrapper position-relative z-1 d-inline-block"&gt;
+                    &lt;div class="social-profile-wrap position-relative z-1 d-flex flex-column align-items-center justify-content-center"&gt;
+                        &lt;ul class="social-profile list-unstyled mb-0"&gt;
+                            &lt;li&gt;&lt;a href="https://www.facebook.com/" target="_blank" class="d-flex align-items-center"&gt;
+                                    &lt;span class="social-icon d-flex flex-column align-items-center justify-content-center rounded-circle"&gt;&lt;i class="ri-facebook-fill"&gt;&lt;/i&gt;&lt;/span&gt;
+                                    &lt;img src="assets/img/hero/fb-curve.svg" alt="Icon" class="transition"&gt;
+                                &lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="https://x.com/?lang=en" target="_blank" class="d-flex align-items-center"&gt;
+                                    &lt;span class="social-icon d-flex flex-column align-items-center justify-content-center rounded-circle"&gt;&lt;i class="ri-twitter-x-line"&gt;&lt;/i&gt;&lt;/span&gt;
+                                    &lt;img src="assets/img/hero/twitter.svg" alt="Icon" class="transition"&gt;
+                                &lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="https://www.linkedin.com/" target="_blank" class="d-flex align-items-center"&gt;
+                                    &lt;span class="social-icon d-flex flex-column align-items-center justify-content-center rounded-circle"&gt;&lt;i class="ri-linkedin-fill"&gt;&lt;/i&gt;&lt;/span&gt;
+                                    &lt;img src="assets/img/hero/linkedin-curve.svg" alt="Icon" class="transition"&gt;
+                                &lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="https://www.instagram.com/" target="_blank" class="d-flex align-items-center"&gt;
+                                    &lt;span class="social-icon d-flex flex-column align-items-center justify-content-center rounded-circle"&gt;&lt;i class="ri-instagram-line"&gt;&lt;/i&gt;&lt;/span&gt;
+                                    &lt;img src="assets/img/hero/insta-curve.svg" alt="Icon" class="transition"&gt;
+                                &lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;div class="circle-text-wrap position-relative d-flex flex-column align-items-center justify-content-center rounded-circle"&gt;
+                            &lt;img src="assets/img/hero/circle-text.svg" alt="Image text" class="rotate"&gt;
+                            &lt;img src="assets/img/icons/fav-icon.svg" alt="Icon" class="fav-icon position-absolute top-50 start-50"&gt;
+                            &lt;a href="contact.html" class="position-absolute top-0 start-0 w-100 h-100"&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;p class="hero-para text-start text-white ms-lg-auto mb-0"&gt;Olawx provides expert legal counsel in Corporate, Intellectual Property, and Litigation law.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Hero Section End --&gt;
+</code>
+</pre>
+                </div>
+                <!-- End HTML Structure -->
+
+                <!-- Responsive Breakpoints -->
+                <div id="responsive_breakpoints" class="pt-70">
+                    <h2>Responsive Breakpoints</h2>
+                    <p>The <strong>olawx</strong> is a responsive template and is based on the <strong>Bootstrap Framework</strong>. For more information you can check the <strong><a target="_blank" href="https://getbootstrap.com/">Bootstrap CSS</a></strong>.</p>
+<pre class="line-numbers mb-0">
+<code class="language-markup">
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+}
+
+/* Min width 1920px */
+@media only screen and (min-width: 1920px) {
+
+}
+</code>
+</pre>
+                </div>
+                <!-- End Responsive Breakpoints -->
+
+                <!-- Fonts Used -->
+                <div id="fonts_used" class="ptb-70">
+                    <h2>Fonts Used</h2>
+                    <p>By default, the template loads <strong>Plus Jakarta Sans</strong> font from Google Web Font Services. The font can be changed based on the website needs. <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
+                    <p>Font code can be found in the &quot;<strong>style.scss</strong>&quot; file path: assets/css/style.scss</p>
+<pre class="line-numbers">
+<code class="language-css">
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+:root {
+  --primaryFont: "Plus Jakarta Sans", sans-serif;
+  --optionalFont: "Manrope", sans-serif;
+}
+</code>
+</pre>
+                    <p><b>Note:</b> After SCSS file run then it will be work</p>
+                </div>
+                <!-- End Fonts Used -->
+
+                <!-- Main Color Change Option -->
+                <div id="color_change_option">
+					<h2>Main Color Change Option</h2>
+					<p>File path: <strong>assets/css/style.scss</strong></p>
+<pre class="line-numbers mb-3">
+<code class="language-css">
+:root {
+  --primaryColor: #503932;
+  --secondaryColor: #D4AF37;
+}
+</code>
+</pre>
+                    <p><strong>Note:</strong> After SCSS file run then it will be work</p>
+                </div>
+                <!-- End Main Color Change Option -->
+
+                <!-- How to Run SCSS File -->
+                <div id="run_scss" class="ptb-70">
+                    <h2>How to Run SCSS File</h2>
+                    <p>Please open the file Visual Studio Code Editor.</p>
+                    <p>And following the video tutorial.</p>
+                    <p>
+                        <strong>Here the Link: <a href="https://www.youtube.com/watch?v=0MWmv1Gvv5w" target="_blank">https://www.youtube.com/watch?v=0MWmv1Gvv5w</a></strong>
+                    </p>
+                </div>
+                <!-- End How to Run SCSS File -->
+
+                <!-- Swiper Slider Edit -->
+                <div id="slider_edit" class="pb-70">
+                    <h2>Swiper Slider Edit Option</h2>
+					<p>File path: <strong>assets/js/main.js</strong></p>
+<pre class="line-numbers mb-3">
+<code class="language-css">
+//Brand Slider
+var brand_slider = new Swiper(".brand-slider", {
+    loop: true,
+    speed: 12000,
+    freemode: false,
+    spaceBetween: 20,
+    simulateTouch: false,
+    autoplay: {
+        delay: 1,
+        disableOnInteraction: false
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 2.5
+        },
+        576: {
+            slidesPerView: 3
+        },
+        768: {
+            slidesPerView: 4
+        },
+        992: {
+            slidesPerView: 5
+        },
+        1200: {
+            slidesPerView: 6
+        },
+        1400: {
+            slidesPerView: 7
+        }
+    }
+});
+</code>
+</pre>
+                    <p>
+                        <strong>More Info please browser the link: <a href="https://swiperjs.com/get-started" target="_blank">Swiper Slider Docs Options</a></strong>
+                    </p>
+                </div>
+                <!-- End Swiper Slider Edit -->
+
+                <!-- Scroll Animation -->
+                <div id="scroll_animation">
+                    <h2>How to Hide Scroll Animation</h2>
+                    <p>Please remove or comment the below code file path: <strong>assets/js/main.js</strong></p>
+<pre class="line-numbers mb-3">
+<code class="language-css">
+    //scrollCue js
+scrollCue.init({
+    threshold: 0.05, 
+});
+</code>
+</pre>
+                    <p>
+                        <strong>More Info please browser the link: <a href="https://prjct-samwest.github.io/scrollCue/" target="_blank">scrollCue Docs</a></strong>
+                    </p>
+                </div>
+                <!-- End Scroll Animation -->
+
+                <!-- Speed Optimization -->
+                <div id="speed_optimization" class="ptb-70">
+                    <h2>Speed Optimization</h2>
+					<p>Please optimize all images KB, MB also, use the image size following by placeholder file path: assets/img/..</p>
+					<p>- <a href="https://tinypng.com/" target="_blank">Tinypng</a></p>
+                    <p>Please minify all CSS file path: assets/css/..</p>
+					<p>- <a href="https://cssminifier.com/" target="_blank">CSS Minifier</a></p>
+					<p>Please minify all JS file path: assets/js/..</p>
+					<p>- <a href="https://javascript-minifier.com/" target="_blank">Javascript Minifier</a></p>
+                </div>
+                <!-- End Speed Optimization -->
+
+                <!-- How to Change Image? -->
+                <div id="how_to_change_image">
+                    <h2>How to Change Image?</h2>
+					<p>Please go to the image file <strong>'path: assets/img/...'</strong> replace the image which one you want following placeholder image size & name</p>
+                </div>
+                <!-- End How to Change Image? -->
+
+
+                <!-- Google Map -->
+				<div id="google_map" class="pt-70">
+                    <h2>How to Add a Google Map to The Website?</h2>
+					<p>1. Please go to <a href="https://www.google.com/maps/@24.9045273,91.8611106,15z" target="_blank">maps.google.com</a>. Type the location in the search box and click on <strong>Share</strong>.</p>
+					<img src="images/maps1.jpg" alt="image">
+					<br>
+					<br>
+					<p>2. In the new window click on <strong>Embed a map</strong> and copy the HTML code of the map. After that add the HTML file.</p>
+					<img src="images/maps2.jpg" alt="image">
+                </div>
+                <!-- End Google Map -->
+				 
+                <!-- Embed Map -->
+				<div class="ptb-70">
+                    <h2>How to Add New Updates of Existing Template</h2>
+					<p>After a certain time, we will update our project based on the latest technology but in your template, you need to update on your own if you want.</p>
+                </div>
+                <!-- End Embed Map -->
+
+                <!-- Credits -->
+                <div id="credits">
+                    <h2>Credits</h2>
+                    <p><strong>Note:</strong> All <strong>images</strong> are used for <strong>preview</strong> purpose only and <strong>not included</strong> in the <strong>final purchase</strong> files.</p>
+                    <p><strong>Images from:</strong><br />
+                        <a target="_blank" href="https://www.freepik.com/">https://freepik.com/</a><br />
+                        <a target="_blank" href="https://pixabay.com/">https://pixabay.com/</a><br />
+                        <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a>
+                    </p>
+                    <p><strong>Google Fonts:</strong><br/>
+						<a href="https://fonts.google.com/specimen/Plus+Jakarta+Sans?query=plus" target="_blank">Plus Jakarta Sans</a>
+					</p>
+                    <p><strong>IconFont</strong><br>
+						<a href="https://remixicon.com/" target="_blank">Remixicon</a><br>
+					</p>
+                </div>
+                <!-- End Credits -->
+
+                <!-- Support -->
+                <div class="ptb-70" id="supports">
+                    <h2>Support</h2>
+                    <h6 class="mb-3"><strong>24-Hour Turnaround Support:</strong></h6>
+                    <ul>
+                        <li>Quick, Dedicated & Professional Support!</li>
+                        <li>We only provide support through our ticketing system. Please submit your ticket by visiting the <a href="https://support.envytheme.com/" target="_blank">EnvyTheme Support System</a>.</li>
+                        <li>For any pre-purchase query, please use live chat on the item demo site also, email, and the item’s comment section on ThemeForest. Thanks!</li>
+                        <li><p>Email: <a href="mailto:hello@envytheme.com">hello@envytheme.com</a></p></li>
+                    </ul>
+                </div>
+                <!-- End Support -->
+
+            </div>
+            <!-- End Content -->
+
+            <!-- Footer -->
+            <footer>
+                <div class="d-flex justify-content-between">
+                    <p>© olawx is Proudly Owned by <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+                    <a href="https://support.envytheme.com/" target="_blank">Contact Us</a>
+                </div>
+            </footer>
+            <!-- End Footer -->
+
+        </div>
+        <!-- End Main Content -->
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/prism.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
