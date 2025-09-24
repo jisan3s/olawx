@@ -1848,3 +1848,401 @@
         right: 5px;
     }
 }
+
+/*-------------------------------
+            RTL  CSS
+-------------------------------*/
+.rtl-enabled{
+
+    @media only screen and (max-width: 767px) {
+    .page-nav {
+        li {
+            a {
+                left: 15px;
+                right: auto;
+                i {
+                    left: 15px;
+                    right: auto;
+                }
+            }
+        }
+    }
+
+    .breadcrumb-area {
+        &:after {
+            right: 0;
+            left: auto;
+        }
+        ul {
+            li {
+                margin-right: 0;
+                margin-left: 11px;
+                padding-right: 0;
+                padding-left: 15px;
+                &:after {
+                    left: -2px;
+                    right: auto;
+                }
+                &:last-child {
+                    margin-left: 0;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+    .video-wrapper {
+        .video-quote {
+            left: auto;
+            right: 15px;
+        }
+    }
+
+    .case-card {
+        &.style-two {
+            .case-link {
+                left: 20px;
+                right: auto;
+            }
+        }
+        &.style-one {
+            .case-counter {
+                left: auto;
+                right: 22px;
+            }
+        }
+    }
+
+    .case-pagination-wrap {
+        &:before {
+            right: 60px;
+            left: auto;
+        }
+        &:after {
+            left: 60px;
+            right: auto;
+        }
+    }
+
+    .attorney-card-wrap {
+        .attorney-card {
+            .attorney-info {
+                padding-right: 0;
+                padding-left: 15px;
+            }
+        }
+    }
+
+    .contact-area {
+        &.style-one {
+            .contact-bg {
+                .contact-info {
+                    left: 20px;
+                    right: 20px;
+                    li {
+                        padding-left: 0px;
+                    }
+                }
+            }
+            .contact-content {
+                padding-left: 0;
+                padding-right: 60px;
+            }
+        }
+    }
+
+
+    .testimonial-card {
+        &.style-one {
+            .client-quote {
+                .client-info-wrap {
+                    .client-info {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+        &.style-two {
+            .client-quote {
+                .client-info-wrap {
+                    .client-info {
+                        padding-right: 40px;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonial-slider {
+        &.style-three {
+            .testimonial-pagination {
+                left: auto;
+                right: auto;
+                bottom: auto;
+                width: auto;
+            }
+        }
+    }
+
+    .comment-item {
+        &.reply {
+            margin-left: 0;
+            margin-right: 30px;
+        }
+    }
+
+    .cart-table {
+        table {
+            tbody {
+                tr {
+                    td {
+                        .cart-product {
+                            margin-left: 0;
+                            margin-right: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .coupon-code {
+        input {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .hero-area {
+        &.style-three {
+            .hero-thumbs {
+                left: auto;
+                right: 50%;
+            }
+        }
+    }
+
+    .contact-area.style-one {
+        .contact-bg {
+            .contact-info {
+                left: 20px;
+                right: 20px;
+            }
+        }
+        .contact-content {
+            padding-right: 0;
+        }
+    }
+
+    .case-card {
+        &.style-three {
+            .case-info {
+                ul {
+                    li {
+                        padding-right: 0;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .video-wrapper {
+        .video-quote {
+            left: 30px;
+            right: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .hero-area {
+        &.style-three {
+            .hero-thumbs {
+                left: 20px;
+                right: auto;
+                .swiper-wrapper {
+                    .hero-thumb-item {
+                        border-right: 1px solid rgba(212,175,55,0.2);
+                        border-left: 1px solid rgba(212,175,55,0.2);
+                    }
+                }
+            }
+        }
+    }
+
+    .about-area {
+        &.style-one {
+            .about-content {
+                .counter-card-wrap {
+                    margin-right: -455px;
+                    margin-right: -455px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .hero-area {
+        &.style-three {
+            .hero-slide-item {
+                .counter-card-wrap {
+                    padding-right: 0;
+                    padding-left: 50px;
+                }
+            }
+        }
+    }
+
+    .contact-area.style-one {
+        .contact-bg {
+            .contact-info {
+                left: 20px;
+                right: 20px;
+            }
+        }
+    }
+
+    .counter-card-wrap {
+        &.style-three {
+            .counter-card {
+                margin-left: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container-fluid {
+        &.style-one {
+            padding-left: calc((100% - 1140px) / 2 + 12px);
+            padding-right: 0;
+             overflow: hidden;
+        }
+        &.style-two {
+            padding-right: calc((100% - 1140px) / 2 + 12px);
+            padding-left: 0;
+             overflow: hidden;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .mx-xxl-39 {
+        margin-left: 3.9rem !important;
+        margin-right: 3.9rem !important;
+    }
+    .ms-xxl-47 {
+        margin-left:0 !important;
+        margin-right: 4.7rem !important;
+    }
+    .ms-xxl-67 {
+        margin-left: 0!important;
+        margin-right: 6.7rem !important;
+    }
+
+    .container-fluid {
+        &.style-one {
+            padding-left: calc((100% - 1320px) / 2 + 12px);
+            padding-right: 0;
+            overflow: hidden;
+        }
+        &.style-two {
+            padding-right: calc((100% - 1320px) / 2 + 12px);
+            padding-left:0;
+            overflow: hidden;
+        }
+    }
+
+    .hero-area {
+        &.style-one {
+            .btn-wrap {
+                .btn {
+                    margin-right: 0; 
+                    margin-left: 35px; 
+                }
+            }
+        }
+        &.style-two {
+            .btn-wrap {
+                .btn {
+                    margin-right: 0; 
+                    margin-left: 35px; 
+                }
+            }
+        }
+        &.style-three {
+            .circle-text-wrap {
+                margin-right: 0;
+                margin-left: 140px;
+            }
+        }
+    }
+
+    .about-area {
+        &.style-three {
+            .about-content {
+                margin-left: 0; 
+                margin-right: auto; 
+            }
+        }
+    }
+
+    .video-wrapper {
+        .video-quote {
+            right: auto;
+            left: 103px;
+        }
+    }
+
+    .service-bg {
+        &.style-one {
+            margin-left: 0;
+            margin-right: -24px;
+        }
+    }
+
+    .case-card {
+        &.style-three {
+            .case-info {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+
+
+    .brand-area {
+        &.style-one {
+            margin-right: 150px;
+            margin-left: 150px;
+        }
+    }
+
+    .contact-area {
+        &.style-one {
+            .contact-bg {
+                .contact-info {
+                    left: 5px;
+                    right: auto;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .contact-area.style-one .contact-content {
+        padding-right: 112px;
+        padding-left: 0;
+    }
+}
+    }

@@ -5933,7 +5933,56 @@ Pagination CSS
             }
         }
     }
-
+    .team-area{
+        &.style-one{
+            .team-area-bg{
+                &:after{
+                    left: auto;
+                    right: 0;
+                    background: linear-gradient(89.88deg, rgba(10, 10, 10, 0) 49.98%, rgba(10, 10, 10, 0.8) 99.88%);
+                }
+            }
+        }
+    }
+    /*-------------------------------
+        Practice Area CSS
+    -------------------------------*/
+    .practice-card{
+        .practice-features{
+            li{
+                padding-right: 9;
+                padding-left: 14px;
+                &:before{
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+        &.style-one{
+            .practice-info{
+                ul{
+                    li{
+                        padding-left: 0;
+                        padding-right: 22px;
+                        &:before{
+                            left: auto;
+                            right: 0;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+    .practice-tablist{
+        .nav-item{
+            .nav-link{
+                .practice-text{
+                    margin-left: 0;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
     /*-------------------------------
             FAQ Section CSS
     -------------------------------*/
@@ -5966,10 +6015,6 @@ Pagination CSS
                         .accord-arrow {
                             right: auto;
                             left: 29px;
-                            i{
-                                left: auto;
-                                right: 51%;
-                            }
                         }
                     }
                 }
@@ -6024,14 +6069,6 @@ Pagination CSS
     /*-------------------------------
             Team Section CSS
     -------------------------------*/
-    .team-area{
-        &.style-one{
-            .team-area-bg{
-                right: 50%;
-                left: auto;
-            }
-        }
-    }
     .attorney-card-wrap{
         .attorney-card{
             .attorney-info{

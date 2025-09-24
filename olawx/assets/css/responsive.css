@@ -1382,4 +1382,224 @@
   .contact-area.style-one .contact-bg .contact-info {
     right: 5px;
   }
+}
+/*-------------------------------
+            RTL  CSS
+-------------------------------*/
+@media only screen and (max-width: 767px) {
+  .rtl-enabled .page-nav li a {
+    left: 15px;
+    right: auto;
+  }
+  .rtl-enabled .page-nav li a i {
+    left: 15px;
+    right: auto;
+  }
+  .rtl-enabled .breadcrumb-area:after {
+    right: 0;
+    left: auto;
+  }
+  .rtl-enabled .breadcrumb-area ul li {
+    margin-right: 0;
+    margin-left: 11px;
+    padding-right: 0;
+    padding-left: 15px;
+  }
+  .rtl-enabled .breadcrumb-area ul li:after {
+    left: -2px;
+    right: auto;
+  }
+  .rtl-enabled .breadcrumb-area ul li:last-child {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .rtl-enabled .video-wrapper .video-quote {
+    left: auto;
+    right: 15px;
+  }
+  .rtl-enabled .case-card.style-two .case-link {
+    left: 20px;
+    right: auto;
+  }
+  .rtl-enabled .case-card.style-one .case-counter {
+    left: auto;
+    right: 22px;
+  }
+  .rtl-enabled .case-pagination-wrap:before {
+    right: 60px;
+    left: auto;
+  }
+  .rtl-enabled .case-pagination-wrap:after {
+    left: 60px;
+    right: auto;
+  }
+  .rtl-enabled .attorney-card-wrap .attorney-card .attorney-info {
+    padding-right: 0;
+    padding-left: 15px;
+  }
+  .rtl-enabled .contact-area.style-one .contact-bg .contact-info {
+    left: 20px;
+    right: 20px;
+  }
+  .rtl-enabled .contact-area.style-one .contact-bg .contact-info li {
+    padding-left: 0px;
+  }
+  .rtl-enabled .contact-area.style-one .contact-content {
+    padding-left: 0;
+    padding-right: 60px;
+  }
+  .rtl-enabled .testimonial-card.style-one .client-quote .client-info-wrap .client-info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .rtl-enabled .testimonial-card.style-two .client-quote .client-info-wrap .client-info {
+    padding-right: 40px;
+    padding-left: 0;
+  }
+  .rtl-enabled .testimonial-slider.style-three .testimonial-pagination {
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: auto;
+  }
+  .rtl-enabled .comment-item.reply {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+  .rtl-enabled .cart-table table tbody tr td .cart-product {
+    margin-left: 0;
+    margin-right: 24px;
+  }
+  .rtl-enabled .coupon-code input {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rtl-enabled .hero-area.style-three .hero-thumbs {
+    left: auto;
+    right: 50%;
+  }
+  .rtl-enabled .contact-area.style-one .contact-bg .contact-info {
+    left: 20px;
+    right: 20px;
+  }
+  .rtl-enabled .contact-area.style-one .contact-content {
+    padding-right: 0;
+  }
+  .rtl-enabled .case-card.style-three .case-info ul li {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .rtl-enabled .video-wrapper .video-quote {
+    left: 30px;
+    right: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .rtl-enabled .hero-area.style-three .hero-thumbs {
+    left: 20px;
+    right: auto;
+  }
+  .rtl-enabled .hero-area.style-three .hero-thumbs .swiper-wrapper .hero-thumb-item {
+    border-right: 1px solid rgba(212, 175, 55, 0.2);
+    border-left: 1px solid rgba(212, 175, 55, 0.2);
+  }
+  .rtl-enabled .about-area.style-one .about-content .counter-card-wrap {
+    margin-right: -455px;
+    margin-right: -455px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .rtl-enabled .hero-area.style-three .hero-slide-item .counter-card-wrap {
+    padding-right: 0;
+    padding-left: 50px;
+  }
+  .rtl-enabled .contact-area.style-one .contact-bg .contact-info {
+    left: 20px;
+    right: 20px;
+  }
+  .rtl-enabled .counter-card-wrap.style-three .counter-card {
+    margin-left: 12px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .rtl-enabled .container-fluid.style-one {
+    padding-left: calc((100% - 1140px) / 2 + 12px);
+    padding-right: 0;
+    overflow: hidden;
+  }
+  .rtl-enabled .container-fluid.style-two {
+    padding-right: calc((100% - 1140px) / 2 + 12px);
+    padding-left: 0;
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .rtl-enabled .mx-xxl-39 {
+    margin-left: 3.9rem !important;
+    margin-right: 3.9rem !important;
+  }
+  .rtl-enabled .ms-xxl-47 {
+    margin-left: 0 !important;
+    margin-right: 4.7rem !important;
+  }
+  .rtl-enabled .ms-xxl-67 {
+    margin-left: 0 !important;
+    margin-right: 6.7rem !important;
+  }
+  .rtl-enabled .container-fluid.style-one {
+    padding-left: calc((100% - 1320px) / 2 + 12px);
+    padding-right: 0;
+    overflow: hidden;
+  }
+  .rtl-enabled .container-fluid.style-two {
+    padding-right: calc((100% - 1320px) / 2 + 12px);
+    padding-left: 0;
+    overflow: hidden;
+  }
+  .rtl-enabled .hero-area.style-one .btn-wrap .btn {
+    margin-right: 0;
+    margin-left: 35px;
+  }
+  .rtl-enabled .hero-area.style-two .btn-wrap .btn {
+    margin-right: 0;
+    margin-left: 35px;
+  }
+  .rtl-enabled .hero-area.style-three .circle-text-wrap {
+    margin-right: 0;
+    margin-left: 140px;
+  }
+  .rtl-enabled .about-area.style-three .about-content {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .rtl-enabled .video-wrapper .video-quote {
+    right: auto;
+    left: 103px;
+  }
+  .rtl-enabled .service-bg.style-one {
+    margin-left: 0;
+    margin-right: -24px;
+  }
+  .rtl-enabled .case-card.style-three .case-info {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .rtl-enabled .brand-area.style-one {
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+  .rtl-enabled .contact-area.style-one .contact-bg .contact-info {
+    left: 5px;
+    right: auto;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .rtl-enabled .contact-area.style-one .contact-content {
+    padding-right: 112px;
+    padding-left: 0;
+  }
 }/*# sourceMappingURL=responsive.css.map */
